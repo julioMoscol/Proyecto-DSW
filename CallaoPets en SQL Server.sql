@@ -1,4 +1,6 @@
+create database callaopets
 
+use callaopets
 
 -- Crear la tabla 'animal'
 CREATE TABLE animal (

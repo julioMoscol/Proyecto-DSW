@@ -292,7 +292,7 @@ CREATE TABLE detalle_venta (
   CONSTRAINT FK_detalle_venta_CodVentaPro FOREIGN KEY (CodVentaPro) REFERENCES venta_producto (CodVentaPro),
   CONSTRAINT FK_detalle_venta_IdProducto FOREIGN KEY (IdProducto) REFERENCES producto (IdProducto)
 )
-
+go
 
 CREATE or alter PROCEDURE listar_cliente_nombre
     @nom varchar(30)
@@ -300,7 +300,7 @@ AS
 BEGIN
     SELECT * FROM cliente WHERE Nombres LIKE @nom + '%'
 END
-
+go
 
 CREATE or alter PROCEDURE listar_trabajador
 AS
@@ -312,7 +312,7 @@ BEGIN
     INNER JOIN area a ON a.IdTipoArea = t.IdTipoArea
     ORDER BY 1
 END
-
+go
 
 CREATE or alter PROCEDURE listar_trabajador_nombre
     @nom NVARCHAR(30)
@@ -326,7 +326,7 @@ BEGIN
     WHERE t.Nombres LIKE CONCAT(@nom, '%')
     ORDER BY 1
 END
-
+go
 
 CREATE or alter PROCEDURE busca_producto
     @nom NVARCHAR(50)
@@ -340,7 +340,7 @@ BEGIN
     INNER JOIN animal AS a ON a.IdAnimal = p.IdAnimal
     WHERE p.Nombre LIKE CONCAT(@nom, '%')
 END
-
+go
 
 CREATE or alter PROCEDURE obtener_productos
 AS
@@ -352,7 +352,7 @@ BEGIN
     INNER JOIN tipoproducto AS t ON t.IdTipoPro = p.IdTipoPro
     INNER JOIN animal AS a ON a.IdAnimal = p.IdAnimal
 END
-
+go
 
 CREATE or alter PROCEDURE usp_ingresosistemacliente
     @correo varchar(60),
@@ -363,7 +363,7 @@ BEGIN
     FROM cliente
     WHERE Correo = @correo AND [password] = @password
 END
-
+go
 
 CREATE or alter PROCEDURE usp_ingresosistematrabajador
     @correo varchar(60),

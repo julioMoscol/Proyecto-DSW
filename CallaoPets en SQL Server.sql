@@ -1,23 +1,26 @@
 create database callaopets
+go
 
 use callaopets
+go
 
 -- Crear la tabla 'animal'
 CREATE TABLE animal (
     IdAnimal INT PRIMARY KEY,
     Descripcion VARCHAR(20) NULL
 )
-
+go
 
 -- Insertar datos en la tabla 'animal'
 INSERT INTO animal (IdAnimal, Descripcion) VALUES (1, 'gato'), (2, 'perro')
+go
 
 -- Crear la tabla 'area'
 CREATE TABLE area (
     IdTipoArea INT PRIMARY KEY,
     Descripcion VARCHAR(20) NOT NULL
 )
-
+go
 
 -- Insertar datos en la tabla 'area'
 INSERT INTO area (IdTipoArea, Descripcion) VALUES
@@ -26,20 +29,20 @@ INSERT INTO area (IdTipoArea, Descripcion) VALUES
     (3, 'almacén'),
     (4, 'ventas'),
     (5, 'dirección')
-
+go
 
 CREATE TABLE cargo (
     IdCargo INT PRIMARY KEY,
     Descripcion VARCHAR(20) NOT NULL
 )
-
+go
 
 INSERT INTO cargo (IdCargo, Descripcion)
 VALUES (1, 'gerente'),
        (2, 'asistente'),
        (3, 'auxiliar'),
        (4, 'técnico')
-       
+ go     
 
 
 CREATE TABLE cliente (
@@ -52,7 +55,7 @@ CREATE TABLE cliente (
     DNI VARCHAR(8) NOT NULL,
     password VARCHAR(20) NULL
 )
-
+go
 
 INSERT INTO cliente (IdCliente, Nombres, Apellidos, Telefono, Direccion, Correo, DNI, password)
 VALUES
@@ -60,7 +63,7 @@ VALUES
 (4, 'Ariana', 'Milla Leon', '912561329', 'Jr Napo 123', 'arianamillaleon@gmail.com', '12345678', 'ari123456'),
 (5, 'Sofia', 'Vera', '912561329', 'Tamarugal D34', 'sabrinavera@gmail.com', '09876543', 'gatito1005'),
 (6, 'Valeria Patricia', 'Mendoza Paredes', '956712345', 'Tamarugal D34', 'valeriapatricia@gmail.com', '71234567', 'gatito1005')
-
+go
 
 CREATE TABLE empresa_delivery (
   IdEmpresaDelivery INT NOT NULL,
@@ -69,12 +72,12 @@ CREATE TABLE empresa_delivery (
   RUC VARCHAR(11) NULL,
   PRIMARY KEY (IdEmpresaDelivery)
 )
-
+go
 
 INSERT INTO empresa_delivery (IdEmpresaDelivery, Nombre, Telefono, RUC)
 VALUES (1, 'Rappi', '01 4254126', '20602985971'),
        (2, 'PedidosYa', '01 4789876', '20556082708')
-       
+ go      
 
 CREATE TABLE trabajador (
     IdTrabajador INT PRIMARY KEY,
@@ -90,7 +93,7 @@ CREATE TABLE trabajador (
     FOREIGN KEY (IdTipoArea) REFERENCES area(IdTipoArea),
     FOREIGN KEY (IdCargo) REFERENCES Cargo(IdCargo)
 )
-
+go
 
 INSERT INTO trabajador (IdTrabajador, Nombres, Apellidos, DNI, Telefono, Correo, Direccion, IdCargo, IdTipoArea, password)
 VALUES
@@ -103,7 +106,7 @@ VALUES
 (7, 'Zadith', 'Vera', '09876543', '956712345', 'gigibethandrea@gmail.com', 'Av Venezuela', 1, 1, 'gatito1005'),
 (9, 'Sabrina', 'Vera', '09876543', '912234897', 'milagroscalderon@gmail.com', 'Islas Aleutianas', 1, 3, 'gatito1005'),
 (15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'akemi123')
-
+go
 
 CREATE TABLE proveedor (
   IdProveedor int NOT NULL,
@@ -115,15 +118,15 @@ CREATE TABLE proveedor (
   Representante varchar(60) DEFAULT NULL,
   PRIMARY KEY (IdProveedor)
 )
-
+go
 
 INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
 VALUES (1, '359-1406', 'Av. José Pardo 434', 'Rintisa', '20100617332', 'consultas@ricocan.com', 'José Perez')
-
+go
 
 INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
 VALUES (2, '0800-10210', 'Fabrica Nestle, Alberto Reyes 1808, Lima 15081', 'Nestlé', '20100166578', 'elviracano@gmail.com', 'Elvira Cano')
-
+go
 
 
 CREATE TABLE ingreso_producto (
@@ -136,14 +139,14 @@ CREATE TABLE ingreso_producto (
   CONSTRAINT FK_ip_IdTrabajador FOREIGN KEY (IdTrabajador) REFERENCES trabajador (IdTrabajador),
   CONSTRAINT FK_ip_IdProveedor FOREIGN KEY (IdProveedor) REFERENCES proveedor (IdProveedor)
 )
-
+go
 
 CREATE TABLE tipoproducto (
   IdTipoPro int NOT NULL,
   Descripcion varchar(20) NOT NULL,
   PRIMARY KEY (IdTipoPro)
 )
-
+go
 
 INSERT INTO tipoproducto (IdTipoPro, Descripcion)
 VALUES
@@ -152,7 +155,7 @@ VALUES
 (3, 'ropa y accesorios'),
 (4, 'limpieza'),
 (5, 'medicamentos')
-
+go
 
 CREATE TABLE producto (
   IdProducto INT NOT NULL,
@@ -171,7 +174,7 @@ CREATE TABLE producto (
   CONSTRAINT FK_Producto_IdProveedor FOREIGN KEY (IdProveedor) REFERENCES proveedor (IdProveedor),
   CONSTRAINT FK_Producto_IdAnimal FOREIGN KEY (IdAnimal) REFERENCES animal (IdAnimal)
 )
-
+go
 
 INSERT INTO producto (IdProducto, IdTipoPro, IdProveedor, Nombre, Cantidad, Preciopublico, StockMinimo, StockMaximo, estado, IdAnimal, PrecioProveedor)
 VALUES
@@ -197,31 +200,29 @@ VALUES
 (21, 1, 1, 'CANBO DOG SKIN PROTECTION CON SALMON T.RZ AD 15KG', 12, 269.00, 5, 20, 1, 2, 198.63),
 (22, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 3KG', 10, 64.40, 5, 30, 1, 2, 47.67),
 (23, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 15KG', 18, 269.00, 5, 20, 1, 2, 198.63)
-
-
+go
 
 CREATE TABLE tipobaja (
   IdTipoBaja int NOT NULL PRIMARY KEY,
   Descripcion varchar(20) NOT NULL
 )
-
+go
 
 INSERT INTO tipobaja (IdTipoBaja, Descripcion)
 VALUES
   (1, 'pérdida'),
   (2, 'deterioro')
-  
+ go 
 
 CREATE TABLE tipopago (
   idtipopago int NOT NULL PRIMARY KEY,
   descripcion varchar(45) NULL
 )
-
+go
 
 INSERT INTO tipopago (idtipopago, descripcion) VALUES (1, 'VISA')
-
 INSERT INTO tipopago (idtipopago, descripcion) VALUES (2, 'MASTERCARD')
-
+go
 
 CREATE TABLE detalle_tipopago (
   iddetallepago INT NOT NULL,
@@ -233,7 +234,7 @@ CREATE TABLE detalle_tipopago (
   CONSTRAINT fk_dpidcliente FOREIGN KEY (idcliente) REFERENCES cliente (IdCliente),
   CONSTRAINT fk_dpidtipopago FOREIGN KEY (idtipopago) REFERENCES tipopago (idtipopago)
 )
-
+go
 
 CREATE TABLE venta_producto (
   CodVentaPro int NOT NULL,
@@ -248,7 +249,7 @@ CREATE TABLE venta_producto (
   CONSTRAINT fk_vpidcliente FOREIGN KEY (IdCliente) REFERENCES cliente (IdCliente),
   CONSTRAINT fk_vpidempresa FOREIGN KEY (IdEmpresaDelivery) REFERENCES empresa_delivery (IdEmpresaDelivery)
 )
-
+go
 -- Crear la tabla 'baja_producto'
 CREATE TABLE baja_producto (
     CodBajaPro INT PRIMARY KEY,
@@ -256,7 +257,7 @@ CREATE TABLE baja_producto (
     FechaBaja DATETIME NOT NULL,
     CONSTRAINT FK_baja_producto_trabajador FOREIGN KEY (IdTrabajador) REFERENCES trabajador (IdTrabajador)
 )
-
+go
 
 CREATE TABLE detalle_baja (
   IdProducto INT NOT NULL,
@@ -268,7 +269,7 @@ CREATE TABLE detalle_baja (
   CONSTRAINT FK_BajaProducto_DetalleBaja FOREIGN KEY (CodBajaPro) REFERENCES baja_producto (CodBajaPro),
   CONSTRAINT FK_TipoBaja_DetalleBaja FOREIGN KEY (IdTipoBaja) REFERENCES tipobaja (IdTipoBaja)
 )
-
+go
 CREATE TABLE detalle_ingreso (
   CodIngresoPro INT NOT NULL,
   IdProducto INT NOT NULL,
@@ -279,7 +280,7 @@ CREATE TABLE detalle_ingreso (
   CONSTRAINT FK_IngresoProducto_DetalleIngreso FOREIGN KEY (CodIngresoPro) REFERENCES ingreso_producto (CodIngresoPro),
   CONSTRAINT FK_Producto_DetalleIngreso FOREIGN KEY (IdProducto) REFERENCES producto (IdProducto)
 )
-
+go
 
 
 CREATE TABLE detalle_venta (
@@ -374,4 +375,16 @@ BEGIN
     FROM trabajador
     WHERE Correo = @correo AND [password] = @password
 END
+go
 
+select*from animal
+select*from area
+select*from cargo
+select*from cliente
+select*from empresa_delivery
+select*from producto
+select*from proveedor
+select*from tipobaja
+select*from tipopago
+select*from trabajador
+go

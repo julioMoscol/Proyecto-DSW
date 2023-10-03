@@ -4,31 +4,17 @@ go
 use callaopets
 go
 
--- Crear la tabla 'animal'
+/*CREANDO TABLAS*/
 CREATE TABLE animal (
     IdAnimal INT PRIMARY KEY,
     Descripcion VARCHAR(20) NULL
 )
 go
 
--- Insertar datos en la tabla 'animal'
-INSERT INTO animal (IdAnimal, Descripcion) VALUES (1, 'gato'), (2, 'perro')
-go
-
--- Crear la tabla 'area'
 CREATE TABLE area (
     IdTipoArea INT PRIMARY KEY,
     Descripcion VARCHAR(20) NOT NULL
 )
-go
-
--- Insertar datos en la tabla 'area'
-INSERT INTO area (IdTipoArea, Descripcion) VALUES
-    (1, 'logística'),
-    (2, 'compras'),
-    (3, 'almacén'),
-    (4, 'ventas'),
-    (5, 'dirección')
 go
 
 CREATE TABLE cargo (
@@ -36,15 +22,7 @@ CREATE TABLE cargo (
     Descripcion VARCHAR(20) NOT NULL
 )
 go
-
-INSERT INTO cargo (IdCargo, Descripcion)
-VALUES (1, 'gerente'),
-       (2, 'asistente'),
-       (3, 'auxiliar'),
-       (4, 'técnico')
- go     
-
-
+   
 CREATE TABLE cliente (
     IdCliente INT PRIMARY KEY,
     Nombres VARCHAR(30) NOT NULL,
@@ -57,14 +35,6 @@ CREATE TABLE cliente (
 )
 go
 
-INSERT INTO cliente (IdCliente, Nombres, Apellidos, Telefono, Direccion, Correo, DNI, password)
-VALUES
-(1, 'Sabrina', 'Mendoza Paredes', '912561329', 'Av Venezuela', 'sabrinagaray@gmai.com', '09876543', 'gumy1005'),
-(4, 'Ariana', 'Milla Leon', '912561329', 'Jr Napo 123', 'arianamillaleon@gmail.com', '12345678', 'ari123456'),
-(5, 'Sofia', 'Vera', '912561329', 'Tamarugal D34', 'sabrinavera@gmail.com', '09876543', 'gatito1005'),
-(6, 'Valeria Patricia', 'Mendoza Paredes', '956712345', 'Tamarugal D34', 'valeriapatricia@gmail.com', '71234567', 'gatito1005')
-go
-
 CREATE TABLE empresa_delivery (
   IdEmpresaDelivery INT NOT NULL,
   Nombre VARCHAR(20) NULL,
@@ -72,12 +42,7 @@ CREATE TABLE empresa_delivery (
   RUC VARCHAR(11) NULL,
   PRIMARY KEY (IdEmpresaDelivery)
 )
-go
-
-INSERT INTO empresa_delivery (IdEmpresaDelivery, Nombre, Telefono, RUC)
-VALUES (1, 'Rappi', '01 4254126', '20602985971'),
-       (2, 'PedidosYa', '01 4789876', '20556082708')
- go      
+go    
 
 CREATE TABLE trabajador (
     IdTrabajador INT PRIMARY KEY,
@@ -95,19 +60,6 @@ CREATE TABLE trabajador (
 )
 go
 
-INSERT INTO trabajador (IdTrabajador, Nombres, Apellidos, DNI, Telefono, Correo, Direccion, IdCargo, IdTipoArea, password)
-VALUES
-(1, 'Gibeth Andrea', 'Peña Alarcon', '74854123', '912561329', 'gibethandrea@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
-(2, 'Alfredo', 'Castillo', '79876543', '998765432', 'alfredocastillo@gmail.com', 'Av Tomas Valle 1120', 3, 2, 'gatito12'),
-(3, 'Sabrina', 'Garay Mendoza', '20984567', '912561329', 'sabrinagaray@gmai.com', 'Islas Aleutianas', 3, 5, 'gatito1005'),
-(4, 'Akem', 'Del Rio', '76781234', '912987321', 'akemidelrio@gmail.com', 'Av. Tomás Valle', 1, 1, 'gatito1005'),
-(5, 'Milagros', 'Calderón', '77897654', '955677675', 'milagroscalderon@gmail.com', 'Av La Marina 1021', 2, 1, 'gatito1005'),
-(6, 'Joshua', 'Perez Martinez', '74854122', '945612389', 'joshuaperez@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
-(7, 'Zadith', 'Vera', '09876543', '956712345', 'gigibethandrea@gmail.com', 'Av Venezuela', 1, 1, 'gatito1005'),
-(9, 'Sabrina', 'Vera', '09876543', '912234897', 'milagroscalderon@gmail.com', 'Islas Aleutianas', 1, 3, 'gatito1005'),
-(15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'akemi123')
-go
-
 CREATE TABLE proveedor (
   IdProveedor int NOT NULL,
   Telefono varchar(11) NOT NULL,
@@ -119,15 +71,6 @@ CREATE TABLE proveedor (
   PRIMARY KEY (IdProveedor)
 )
 go
-
-INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
-VALUES (1, '359-1406', 'Av. José Pardo 434', 'Rintisa', '20100617332', 'consultas@ricocan.com', 'José Perez')
-go
-
-INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
-VALUES (2, '0800-10210', 'Fabrica Nestle, Alberto Reyes 1808, Lima 15081', 'Nestlé', '20100166578', 'elviracano@gmail.com', 'Elvira Cano')
-go
-
 
 CREATE TABLE ingreso_producto (
   CodIngresoPro INT NOT NULL,
@@ -146,15 +89,6 @@ CREATE TABLE tipoproducto (
   Descripcion varchar(20) NOT NULL,
   PRIMARY KEY (IdTipoPro)
 )
-go
-
-INSERT INTO tipoproducto (IdTipoPro, Descripcion)
-VALUES
-(1, 'comidas'),
-(2, 'juguetes'),
-(3, 'ropa y accesorios'),
-(4, 'limpieza'),
-(5, 'medicamentos')
 go
 
 CREATE TABLE producto (
@@ -176,52 +110,16 @@ CREATE TABLE producto (
 )
 go
 
-INSERT INTO producto (IdProducto, IdTipoPro, IdProveedor, Nombre, Cantidad, Preciopublico, StockMinimo, StockMaximo, estado, IdAnimal, PrecioProveedor)
-VALUES
-(1, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG AD 3KG', 20, 51.60, 5, 30, 0, 2, 38.17),
-(2, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG AD 15KG', 10, 221.80, 5, 20, 1, 2, 164.14),
-(3, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ AD 3KG', 6, 51.60, 5, 30, 1, 2, 38.17),
-(5, 1, 1, 'CANBO DOG HIGH BALANCE T.RZ AD 15KG', 17, 221.80, 5, 20, 1, 2, 164.14),
-(6, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG CACH 3KG', 18, 56.20, 5, 30, 1, 2, 41.61),
-(7, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG CACH 15KG', 10, 232.10, 5, 20, 1, 2, 171.78),
-(8, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ CACH 1KG', 26, 20.60, 5, 30, 1, 2, 15.27),
-(9, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ CACH 7KG', 15, 117.10, 5, 25, 1, 2, 86.65),
-(10, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ AD 3KG', 10, 59.00, 5, 30, 1, 2, 43.64),
-(11, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ AD 7KG', 15, 129.00, 5, 25, 1, 2, 95.20),
-(12, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG AD 3KG', 10, 59.00, 5, 30, 1, 2, 43.64),
-(13, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG AD 15KG', 10, 253.00, 5, 20, 1, 2, 186.44),
-(14, 1, 1, 'CANBO DOG CON POLLO ARROZ T.RZ SENIOR 3KG', 15, 59.00, 5, 30, 1, 2, 43.64),
-(15, 1, 1, 'CANBO DOG CON POLLO ARROZ T.RZ SENIOR 15KG', 15, 253.00, 5, 20, 1, 2, 186.44),
-(16, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ CACH 1KG', 10, 23.60, 5, 30, 1, 2, 17.48),
-(17, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ CACH 7KG', 15, 134.20, 5, 25, 1, 2, 99.32),
-(18, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG CACH 3KG', 25, 64.40, 5, 30, 1, 2, 47.67),
-(19, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG CACH 15KG', 15, 269.00, 5, 20, 1, 2, 198.63),
-(20, 1, 1, 'CANBO DOG SKIN PROTECTION CON SALMON T.RZ AD 3KG', 10, 64.40, 5, 30, 1, 2, 47.67),
-(21, 1, 1, 'CANBO DOG SKIN PROTECTION CON SALMON T.RZ AD 15KG', 12, 269.00, 5, 20, 1, 2, 198.63),
-(22, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 3KG', 10, 64.40, 5, 30, 1, 2, 47.67),
-(23, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 15KG', 18, 269.00, 5, 20, 1, 2, 198.63)
-go
-
 CREATE TABLE tipobaja (
   IdTipoBaja int NOT NULL PRIMARY KEY,
   Descripcion varchar(20) NOT NULL
 )
 go
 
-INSERT INTO tipobaja (IdTipoBaja, Descripcion)
-VALUES
-  (1, 'pérdida'),
-  (2, 'deterioro')
- go 
-
 CREATE TABLE tipopago (
   idtipopago int NOT NULL PRIMARY KEY,
   descripcion varchar(45) NULL
 )
-go
-
-INSERT INTO tipopago (idtipopago, descripcion) VALUES (1, 'VISA')
-INSERT INTO tipopago (idtipopago, descripcion) VALUES (2, 'MASTERCARD')
 go
 
 CREATE TABLE detalle_tipopago (
@@ -249,8 +147,8 @@ CREATE TABLE venta_producto (
   CONSTRAINT fk_vpidcliente FOREIGN KEY (IdCliente) REFERENCES cliente (IdCliente),
   CONSTRAINT fk_vpidempresa FOREIGN KEY (IdEmpresaDelivery) REFERENCES empresa_delivery (IdEmpresaDelivery)
 )
-go
--- Crear la tabla 'baja_producto'
+GO
+
 CREATE TABLE baja_producto (
     CodBajaPro INT PRIMARY KEY,
     IdTrabajador INT NOT NULL,
@@ -295,6 +193,118 @@ CREATE TABLE detalle_venta (
 )
 go
 
+
+
+
+/*INSERTS A LAS TABLAS*/
+INSERT INTO animal (IdAnimal, Descripcion) VALUES (1, 'gato'), (2, 'perro')
+go
+
+INSERT INTO area (IdTipoArea, Descripcion) VALUES
+    (1, 'logística'),
+    (2, 'compras'),
+    (3, 'almacén'),
+    (4, 'ventas'),
+    (5, 'dirección')
+go
+
+INSERT INTO cargo (IdCargo, Descripcion)
+VALUES (1, 'gerente'),
+       (2, 'asistente'),
+       (3, 'auxiliar'),
+       (4, 'técnico')
+ go  
+
+INSERT INTO cliente (IdCliente, Nombres, Apellidos, Telefono, Direccion, Correo, DNI, password)
+VALUES
+(1, 'Sabrina', 'Mendoza Paredes', '912561329', 'Av Venezuela', 'sabrinagaray@gmai.com', '09876543', 'gumy1005'),
+(4, 'Ariana', 'Milla Leon', '912561329', 'Jr Napo 123', 'arianamillaleon@gmail.com', '12345678', 'ari123456'),
+(5, 'Sofia', 'Vera', '912561329', 'Tamarugal D34', 'sabrinavera@gmail.com', '09876543', 'gatito1005'),
+(6, 'Valeria Patricia', 'Mendoza Paredes', '956712345', 'Tamarugal D34', 'valeriapatricia@gmail.com', '71234567', 'gatito1005')
+go
+
+INSERT INTO empresa_delivery (IdEmpresaDelivery, Nombre, Telefono, RUC)
+VALUES (1, 'Rappi', '01 4254126', '20602985971'),
+       (2, 'PedidosYa', '01 4789876', '20556082708')
+ go  
+
+INSERT INTO trabajador (IdTrabajador, Nombres, Apellidos, DNI, Telefono, Correo, Direccion, IdCargo, IdTipoArea, password)
+VALUES
+(1, 'Gibeth Andrea', 'Peña Alarcon', '74854123', '912561329', 'gibethandrea@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
+(2, 'Alfredo', 'Castillo', '79876543', '998765432', 'alfredocastillo@gmail.com', 'Av Tomas Valle 1120', 3, 2, 'gatito12'),
+(3, 'Sabrina', 'Garay Mendoza', '20984567', '912561329', 'sabrinagaray@gmai.com', 'Islas Aleutianas', 3, 5, 'gatito1005'),
+(4, 'Akem', 'Del Rio', '76781234', '912987321', 'akemidelrio@gmail.com', 'Av. Tomás Valle', 1, 1, 'gatito1005'),
+(5, 'Milagros', 'Calderón', '77897654', '955677675', 'milagroscalderon@gmail.com', 'Av La Marina 1021', 2, 1, 'gatito1005'),
+(6, 'Joshua', 'Perez Martinez', '74854122', '945612389', 'joshuaperez@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
+(7, 'Zadith', 'Vera', '09876543', '956712345', 'gigibethandrea@gmail.com', 'Av Venezuela', 1, 1, 'gatito1005'),
+(9, 'Sabrina', 'Vera', '09876543', '912234897', 'milagroscalderon@gmail.com', 'Islas Aleutianas', 1, 3, 'gatito1005'),
+(15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'akemi123')
+go
+
+INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
+VALUES (1, '359-1406', 'Av. José Pardo 434', 'Rintisa', '20100617332', 'consultas@ricocan.com', 'José Perez')
+go
+
+INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
+VALUES (2, '0800-10210', 'Fabrica Nestle, Alberto Reyes 1808, Lima 15081', 'Nestlé', '20100166578', 'elviracano@gmail.com', 'Elvira Cano')
+go
+
+INSERT INTO tipoproducto (IdTipoPro, Descripcion)
+VALUES
+(1, 'comidas'),
+(2, 'juguetes'),
+(3, 'ropa y accesorios'),
+(4, 'limpieza'),
+(5, 'medicamentos')
+go
+
+INSERT INTO producto (IdProducto, IdTipoPro, IdProveedor, Nombre, Cantidad, Preciopublico, StockMinimo, StockMaximo, estado, IdAnimal, PrecioProveedor)
+VALUES
+(1, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG AD 3KG', 20, 51.60, 5, 30, 0, 2, 38.17),
+(2, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG AD 15KG', 10, 221.80, 5, 20, 1, 2, 164.14),
+(3, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ AD 3KG', 6, 51.60, 5, 30, 1, 2, 38.17),
+(5, 1, 1, 'CANBO DOG HIGH BALANCE T.RZ AD 15KG', 17, 221.80, 5, 20, 1, 2, 164.14),
+(6, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG CACH 3KG', 18, 56.20, 5, 30, 1, 2, 41.61),
+(7, 1, 1, 'CANBO DOG CON CORDERO RZ.MYG CACH 15KG', 10, 232.10, 5, 20, 1, 2, 171.78),
+(8, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ CACH 1KG', 26, 20.60, 5, 30, 1, 2, 15.27),
+(9, 1, 1, 'CANBO DOG CON CORDERO RZ.PQ CACH 7KG', 15, 117.10, 5, 25, 1, 2, 86.65),
+(10, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ AD 3KG', 10, 59.00, 5, 30, 1, 2, 43.64),
+(11, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ AD 7KG', 15, 129.00, 5, 25, 1, 2, 95.20),
+(12, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG AD 3KG', 10, 59.00, 5, 30, 1, 2, 43.64),
+(13, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG AD 15KG', 10, 253.00, 5, 20, 1, 2, 186.44),
+(14, 1, 1, 'CANBO DOG CON POLLO ARROZ T.RZ SENIOR 3KG', 15, 59.00, 5, 30, 1, 2, 43.64),
+(15, 1, 1, 'CANBO DOG CON POLLO ARROZ T.RZ SENIOR 15KG', 15, 253.00, 5, 20, 1, 2, 186.44),
+(16, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ CACH 1KG', 10, 23.60, 5, 30, 1, 2, 17.48),
+(17, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.PQ CACH 7KG', 15, 134.20, 5, 25, 1, 2, 99.32),
+(18, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG CACH 3KG', 25, 64.40, 5, 30, 1, 2, 47.67),
+(19, 1, 1, 'CANBO DOG CON POLLO ARROZ RZ.MYG CACH 15KG', 15, 269.00, 5, 20, 1, 2, 198.63),
+(20, 1, 1, 'CANBO DOG SKIN PROTECTION CON SALMON T.RZ AD 3KG', 10, 64.40, 5, 30, 1, 2, 47.67),
+(21, 1, 1, 'CANBO DOG SKIN PROTECTION CON SALMON T.RZ AD 15KG', 12, 269.00, 5, 20, 1, 2, 198.63),
+(22, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 3KG', 10, 64.40, 5, 30, 1, 2, 47.67),
+(23, 1, 1, 'CANBO DOG WEIGHT CONTROL CON POLLO T.RZ AD 15KG', 18, 269.00, 5, 20, 1, 2, 198.63)
+go
+
+INSERT INTO tipobaja (IdTipoBaja, Descripcion)
+VALUES
+  (1, 'pérdida'),
+  (2, 'deterioro')
+ go 
+
+INSERT INTO tipopago (idtipopago, descripcion) VALUES (1, 'VISA')
+INSERT INTO tipopago (idtipopago, descripcion) VALUES (2, 'MASTERCARD')
+go
+
+
+
+
+/*PROCEDURES*/
+create or alter proc usp_listar_cliente
+as
+begin 
+    select *from cliente
+end
+go
+
 CREATE or alter PROCEDURE listar_cliente_nombre
     @nom varchar(30)
 AS
@@ -302,6 +312,47 @@ BEGIN
     SELECT * FROM cliente WHERE Nombres LIKE @nom + '%'
 END
 go
+
+create or alter proc agregar_clientes
+    @idCliente int,
+    @Nombres varchar(30),
+    @Apellidos varchar(30),
+    @Telefono varchar(11),
+    @Direccion varchar(80),
+    @Correo varchar(60),
+    @DNI varchar(8),
+    @password varchar(20)
+as
+begin
+    insert into cliente values (@idCliente, @Nombres, @Apellidos, @Telefono, @Direccion, @Correo, @DNI, @password)
+end
+go
+
+create or alter proc actualizar_clientes
+    @idCliente int,
+    @Nombres varchar(30),
+    @Apellidos varchar(30),
+    @Telefono varchar(11),
+    @Direccion varchar(80),
+    @Correo varchar(60),
+    @DNI varchar(8),
+    @password varchar(20)
+as
+begin
+    update cliente set Nombres = @Nombres, Apellidos = @Apellidos, Telefono = @Telefono, Direccion = @Direccion, Correo = @Correo, DNI = @DNI, password = @password
+    where idCliente = @idCliente
+end
+go
+
+create or alter proc eliminar_clientes
+    @idCliente int
+as
+begin
+    delete from cliente
+    where idCliente = @idCliente
+end
+go
+
 
 CREATE or alter PROCEDURE listar_trabajador
 AS
@@ -329,7 +380,51 @@ BEGIN
 END
 go
 
-CREATE or alter PROCEDURE busca_producto
+create or alter proc agregar_trabajador
+    @IdTrabajador int,
+    @Nombres varchar(30),
+    @Apellidos varchar(30),
+    @DNI varchar(8),
+    @Telefono varchar(11),
+    @Correo varchar(60),
+    @Direccion varchar(60),
+    @IdCargo int,
+    @IdTipoArea int,
+    @Password varchar(20)
+as
+begin
+    insert into trabajador values (@IdTrabajador, @Nombres, @Apellidos,  @DNI, @Telefono, @Correo, @Direccion, @IdCargo, @IdTipoArea, @Password)
+end
+go
+
+create or alter proc actualizar_trabajador
+    @IdTrabajador int,
+    @Nombres varchar(30),
+    @Apellidos varchar(30),
+    @DNI varchar(8),
+    @Telefono varchar(11),
+    @Correo varchar(60),
+    @Direccion varchar(60),
+    @IdCargo int,
+    @IdTipoArea int,
+    @Password varchar(20)
+as
+begin
+    update trabajador set Nombres = @Nombres, Apellidos = @Apellidos, DNI = @DNI, Telefono = @Telefono, Correo = @Correo, Direccion = @Direccion, IdCargo = @IdCargo, IdTipoArea = @IdTipoArea, Password = @Password
+    where IdTrabajador = @IdTrabajador
+end
+go
+
+create or alter proc eliminar_trabajador
+    @IdTrabajador int
+as
+begin
+    delete from trabajador
+    where IdTrabajador = @IdTrabajador
+end
+go
+
+CREATE or alter PROCEDURE buscar_productos_nombre
     @nom NVARCHAR(50)
 AS
 BEGIN
@@ -343,7 +438,7 @@ BEGIN
 END
 go
 
-CREATE or alter PROCEDURE obtener_productos
+CREATE or alter PROCEDURE lista_productos
 AS
 BEGIN
     SELECT p.IdProducto, t.Descripcion, pr.IdProveedor, p.Nombre, p.Cantidad, p.PrecioPublico, 
@@ -353,6 +448,52 @@ BEGIN
     INNER JOIN tipoproducto AS t ON t.IdTipoPro = p.IdTipoPro
     INNER JOIN animal AS a ON a.IdAnimal = p.IdAnimal
 END
+go
+
+create or alter proc agregar_productos
+    @IdProducto int,
+    @IdTipoPro int,
+    @IdProveedor int,
+    @Nombre varchar(120),
+    @Cantidad smallint,
+    @Preciopublico decimal(10, 2),
+    @StockMinimo smallint,
+    @StockMaximo smallint,
+    @estado TINYINT,
+    @IdAnimal int,
+    @PrecioProveedor decimal(10, 2)
+as
+begin
+    insert into producto values (@IdProducto, @IdTipoPro, @IdProveedor,  @Nombre, @Cantidad, @PrecioPublico, @StockMinimo, @StockMaximo, @estado, @IdAnimal, @PrecioProveedor)
+end
+go
+
+create or alter proc actualizar_productos
+    @IdProducto int,
+    @IdTipoPro int,
+    @IdProveedor int,
+    @Nombre varchar(120),
+    @Cantidad smallint,
+    @Preciopublico decimal(10, 2),
+    @StockMinimo smallint,
+    @StockMaximo smallint,
+    @estado TINYINT,
+    @IdAnimal int,
+    @PrecioProveedor decimal(10, 2)
+as
+begin
+    update producto set IdTipoPro = @IdTipoPro, IdProveedor = @IdProveedor, Nombre = @Nombre, Cantidad = @Cantidad, PrecioPublico = @PrecioPublico, StockMinimo = @StockMinimo, StockMaximo = @StockMaximo, estado = @estado, IdAnimal = @IdAnimal, PrecioProveedor = @PrecioProveedor
+    where IdProducto = @IdProducto
+end
+go
+
+create or alter proc eliminar_productos
+    @IdProducto int
+as
+begin
+    delete from producto
+    where IdProducto = @IdProducto
+end
 go
 
 CREATE or alter PROCEDURE usp_ingresosistemacliente
@@ -377,6 +518,64 @@ BEGIN
 END
 go
 
+create or alter proc listar_proveedores
+as
+BEGIN
+    select * from proveedor
+end
+go
+
+create or alter proc listar_proveedores_empresa
+    @empresa varchar(20)
+AS
+BEGIN
+    select * from proveedor
+    where Empresa like @empresa + '%'
+end
+GO
+
+create or alter proc agregar_proveedores
+    @idProveedor int,
+    @Telefono varchar(11),
+    @Direccion varchar(80),
+    @Empresa varchar(20),
+    @RUC varchar(11),
+    @Correo varchar(60),
+    @Representante varchar(60)
+as
+begin
+    insert into proveedor values (@idProveedor, @Telefono, @Direccion, @Empresa, @RUC, @Correo, @Representante)
+end
+go
+
+create or alter proc actualizar_proveedores
+    @idProveedor int,
+    @Telefono varchar(11),
+    @Direccion varchar(80),
+    @Empresa varchar(20),
+    @RUC varchar(11),
+    @Correo varchar(60),
+    @Representante varchar(60)
+as
+begin
+    update proveedor set Telefono = @Telefono, Direccion = @Direccion, Empresa = @Empresa, RUC = @RUC, Correo = @Correo, Representante = @Representante
+    where @idProveedor = IdProveedor
+end
+go
+
+create or alter proc eliminar_proveedores
+    @idProveedor int
+as
+BEGIN
+    delete from proveedor
+    where IdProveedor = @idProveedor
+end
+go
+
+
+
+
+/*PROBANDO PROC Y SELECTS*/
 select*from animal
 select*from area
 select*from cargo

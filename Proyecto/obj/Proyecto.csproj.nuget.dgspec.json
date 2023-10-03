@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/juliomoscol/Documentos/Proyecto-DSW/Proyecto/Proyecto.csproj": {}
+    "D:\\.net\\Proyecto-DSW\\Proyecto\\Proyecto.csproj": {}
   },
   "projects": {
-    "/home/juliomoscol/Documentos/Proyecto-DSW/Proyecto/Proyecto.csproj": {
+    "D:\\.net\\Proyecto-DSW\\Proyecto\\Proyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/juliomoscol/Documentos/Proyecto-DSW/Proyecto/Proyecto.csproj",
+        "projectUniqueName": "D:\\.net\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
         "projectName": "Proyecto",
-        "projectPath": "/home/juliomoscol/Documentos/Proyecto-DSW/Proyecto/Proyecto.csproj",
-        "packagesPath": "/home/juliomoscol/.nuget/packages/",
-        "outputPath": "/home/juliomoscol/Documentos/Proyecto-DSW/Proyecto/obj/",
+        "projectPath": "D:\\.net\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
+        "packagesPath": "C:\\Users\\alfre\\.nuget\\packages\\",
+        "outputPath": "D:\\.net\\Proyecto-DSW\\Proyecto\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/juliomoscol/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\alfre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.122/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

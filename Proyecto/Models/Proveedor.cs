@@ -1,5 +1,5 @@
 namespace Proyecto.Models{
-    public class proveedor{
+    public class Proveedor{
 
         public int idProveedor {get;set;}
         public string telefono {get;set;}
@@ -9,7 +9,7 @@ namespace Proyecto.Models{
         public string correo {get;set;}
         public string representante {get;set;}
 
-        public proveedor(){
+        public Proveedor(){
             idProveedor = 0;
             telefono = "";
             direccion = "";

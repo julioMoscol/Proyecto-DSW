@@ -5,21 +5,21 @@ using System.Configuration;
 using System.Data;
 
 namespace Proyecto.Repositorio.RepositorioSQL{
-    public class proveedorSQL : IProveedor
+    public class ProveedorSQL : IProveedor
     {
         private readonly string cadena;
-        public proveedorSQL(){
+        public ProveedorSQL(){
             
             cadena = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("sql");
         }
-        public IEnumerable<proveedor> GetProveedor(){
-            List<proveedor> temporal = new List<proveedor>();
+        public IEnumerable<Proveedor> GetProveedor(){
+            List<Proveedor> temporal = new List<Proveedor>();
             using(SqlConnection cn = new SqlConnection(cadena)){
                 cn.Open();
                 SqlCommand cmd = new SqlCommand("exec listar_proveedores", cn);
                 SqlDataReader dr = cmd.ExecuteReader();
                 while(dr.Read()){
-                    temporal.Add(new proveedor(){
+                    temporal.Add(new Proveedor(){
                         idProveedor = dr.GetInt32(0),
                         telefono = dr.GetString(1),
                         direccion = dr.GetString(2),
@@ -33,9 +33,9 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return temporal;
         }
-        public IEnumerable<proveedor> GetProveedor(string empresa)
+        public IEnumerable<Proveedor> GetProveedor(string empresa)
         {
-            List<proveedor> temporal = new List<proveedor>();
+            List<Proveedor> temporal = new List<Proveedor>();
             using(SqlConnection cn = new SqlConnection(cadena)){
                 cn.Open();
                 SqlCommand cmd = new SqlCommand("exec listar_proveedores_empresa", cn);
@@ -43,7 +43,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                 cmd.Parameters.AddWithValue("@empresa", empresa);
                 SqlDataReader dr = cmd.ExecuteReader();
                 while(dr.Read()){
-                    temporal.Add(new proveedor(){
+                    temporal.Add(new Proveedor(){
                         idProveedor = dr.GetInt32(0),
                         telefono = dr.GetString(1),
                         direccion = dr.GetString(2),
@@ -57,7 +57,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return temporal;
         }
-        public string agregarProveedor(proveedor reg)
+        public string agregarProveedor(Proveedor reg)
         {
             string mensaje = "";
             using(SqlConnection cn = new SqlConnection(cadena)){
@@ -82,7 +82,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return mensaje;
         }
-        public string actualizarProveedor(proveedor reg)
+        public string actualizarProveedor(Proveedor reg)
         {
             string mensaje = "";
             using(SqlConnection cn = new SqlConnection(cadena)){
@@ -107,7 +107,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return mensaje;
         }
-        public string eliminarProveedor(proveedor reg)
+        public string eliminarProveedor(Proveedor reg)
         {
             string mensaje = "";
             using(SqlConnection cn = new SqlConnection(cadena)){
@@ -126,7 +126,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return mensaje;
         }
-        public proveedor GetProveedor(int idProveedor)
+        public Proveedor GetProveedor(int idProveedor)
         {
             throw new NotImplementedException();
         }

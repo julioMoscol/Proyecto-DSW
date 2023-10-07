@@ -365,7 +365,7 @@ BEGIN
     ORDER BY 1
 END
 go
-
+ 
 CREATE or alter PROCEDURE listar_trabajador_nombre
     @nom NVARCHAR(30)
 AS
@@ -449,6 +449,8 @@ BEGIN
     INNER JOIN animal AS a ON a.IdAnimal = p.IdAnimal
 END
 go
+exec lista_productos
+go
 
 create or alter proc agregar_productos
     @IdProducto int,
@@ -523,6 +525,8 @@ as
 BEGIN
     select * from proveedor
 end
+go
+exec listar_proveedores
 go
 
 create or alter proc listar_proveedores_empresa

@@ -1,4 +1,11 @@
+using Proyecto.Repositorio.Interface;
+using Proyecto.Repositorio.RepositorioSQL;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<IProducto, ProductoSQl>();
+builder.Services.AddSingleton<IProveedor, ProveedorSQL>();
+builder.Services.AddSingleton<ITrabajador, TrabajadorSQL>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

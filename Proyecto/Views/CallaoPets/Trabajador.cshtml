@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Proyecto.Models.Trabajador>
+
+@{
+    ViewData["Title"] = "Trabajador";
+}
+
+<h1>Trabajador</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idtrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomtrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apetrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dnitrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.teltrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cargo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idtrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomtrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apetrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dnitrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.teltrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cargo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.area)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.idtrabajador},new {@class="btn btn-primary"}) |
+                    @Html.ActionLink("Detalles", "Details", new { id=item.idtrabajador },new{@class="btn btn-success"}) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id=item.idtrabajador },new {@class="btn btn-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

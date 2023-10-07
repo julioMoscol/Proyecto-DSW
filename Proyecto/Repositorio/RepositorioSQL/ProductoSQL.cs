@@ -17,6 +17,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             using(SqlConnection cn = new SqlConnection(cadena)){
                 cn.Open();
                 SqlCommand cmd = new SqlCommand("exec lista_productos", cn);
+                cmd.CommandType = CommandType.Text;
                 SqlDataReader dr = cmd.ExecuteReader();
                 while(dr.Read()){
                     temporal.Add(new Producto(){
@@ -24,13 +25,13 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                         tipoproducto = dr.GetString(1),
                         idproveedor = dr.GetInt32(2),
                         nomproducto = dr.GetString(3),
-                        cantproducto = dr.GetInt32(4),
-                        precproducto = dr.GetDouble(5),
-                        stockmin = dr.GetInt32(6),
-                        stockmax = dr.GetInt32(7),
-                        estadoproducto = dr.GetInt32(8),
+                        cantproducto = dr.GetInt16(4),
+                        precproducto = dr.GetDecimal(5),
+                        stockmin = dr.GetInt16(6),
+                        stockmax = dr.GetInt16(7),
+                        estadoproducto = dr.GetByte(8),
                         animal = dr.GetString(9),
-                        precproveedor = dr.GetDouble(10),
+                        precproveedor = dr.GetDecimal(10),
                     });
                 }
                 dr.Close();
@@ -54,12 +55,12 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                         idproveedor = dr.GetInt32(2),
                         nomproducto = dr.GetString(3),
                         cantproducto = dr.GetInt32(4),
-                        precproducto = dr.GetDouble(5),
+                        precproducto = dr.GetDecimal(5),
                         stockmin = dr.GetInt32(6),
                         stockmax = dr.GetInt32(7),
-                        estadoproducto = dr.GetInt32(8),
+                        estadoproducto = dr.GetByte(8),
                         animal = dr.GetString(9),
-                        precproveedor = dr.GetDouble(10),
+                        precproveedor = dr.GetDecimal(10),
                     });
                 }
                 dr.Close();

@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Proyecto.Models.Producto>
+
+@{
+    ViewData["Title"] = "Producto";
+}
+
+<h1>Producto</h1>
+
+<div>
+
+    <a asp-action="Create" class="btn btn-primary">Nuevo Producto</a>
+</div>
+  
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idproveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stockmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stockmax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estadoproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.animal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precproveedor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stockmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stockmax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estadoproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.animal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precproveedor)
+            </td>
+            <td>
+                @Html.ActionLink("Editable", "Edit", new { id=item.idproducto },new{@class="btn btn-primary"}) |
+                @Html.ActionLink("Detalles", "Details", new { id=item.idproducto},new {@class="btn btn-success"}) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.idproducto },new{@class="btn btn-danger"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

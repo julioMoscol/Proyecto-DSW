@@ -7,12 +7,12 @@ namespace Proyecto.Models{
         [Display(Name ="Id Proveedor")]  public int idproveedor { get; set;}
         [Display(Name ="Nombre Producto")]  public string nomproducto { get; set; }
         [Display(Name ="Cantidad Producto")] public int cantproducto { get; set; }
-        [Display(Name ="Precio Producto")] public double precproducto { get; set; }
+        [Display(Name ="Precio Producto")] public decimal precproducto { get; set; }
         [Display(Name ="Stock Mínimo")] public int stockmin { get; set; }
         [Display(Name ="Stock Máximo")]public int stockmax { get; set;}
-        [Display(Name ="Estado Producto")]public int estadoproducto { get; set; }
+        [Display(Name ="Estado Producto")]public byte estadoproducto { get; set; }
         [Display(Name ="Tipo Animal")] public string animal { get; set; }
-        [Display(Name ="Precio Proveedor")] public double precproveedor { get; set; }
+        [Display(Name ="Precio Proveedor")] public decimal precproveedor { get; set; }
         
         public Producto(){
             idproducto = 0;

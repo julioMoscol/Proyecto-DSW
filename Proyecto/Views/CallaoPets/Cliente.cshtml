@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Proyecto.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Cliente";
+}
+
+<h1>Listado de Clientes</h1>
+
+<form>
+    <em>Nombre a filtrar</em>
+    @Html.TextBox("nom")
+    <button>Consultar</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idcliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomcliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellcliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telcliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idcliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomcliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellcliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telcliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditCliente", new { idcliente = item.idcliente }) |
+                @Html.ActionLink("Detalle", "DetailsCliente", new { idcliente = item.idcliente }) |
+                @Html.ActionLink("Eliminar", "DeleteCliente", new { idcliente = item.idcliente }, new { onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

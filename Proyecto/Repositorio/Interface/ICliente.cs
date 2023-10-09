@@ -7,11 +7,9 @@ namespace Proyecto.Repositorio.Interface
         IEnumerable<Cliente> GetCliente();
         IEnumerable<Cliente> GetClientes(string nom);
         Cliente buscarCliente(int id);
-        string agregarProducto(Cliente reg);
-        string eliminarProducto(Cliente id);
-        string modificarProducto(Cliente reg);
-
-
+        string agregarCliente(Cliente reg);
+        string eliminarCliente(Cliente id);
+        string modificarCliente(Cliente reg);
     }
 
 }

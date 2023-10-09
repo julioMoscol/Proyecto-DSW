@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\cibertec V\Desarrollo de servicios web I\Proyecto\Proyecto-DSW\Proyecto
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Cliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

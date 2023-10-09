@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<IProducto, ProductoSQl>();
 builder.Services.AddSingleton<IProveedor, ProveedorSQL>();
 builder.Services.AddSingleton<ITrabajador, TrabajadorSQL>();
+builder.Services.AddSingleton<ICliente, ClienteSQL>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -14,11 +14,13 @@ namespace Proyecto.Controllers
         IProducto _producto;
         ITrabajador _trabajador;
         IProveedor _proveedor;
+        ICliente _cliente;
         public CallaoPetsController()
         {
             _producto =new ProductoSQl();
             _proveedor = new ProveedorSQL();
             _trabajador = new TrabajadorSQL();
+            _cliente = new ClienteSQL();
         }
         public async Task< IActionResult> Index()
         {
@@ -31,6 +33,14 @@ namespace Proyecto.Controllers
         public async Task<IActionResult> Producto()
         {
             return View(await Task.Run(()=>_producto.GetProducto()));
+        }
+
+        /*CLIENTE*/
+        public async Task<IActionResult> Cliente(string nom = "")
+        {
+            ViewBag.nom = nom;
+
+            return View(await Task.Run(() => _cliente.GetClientes(nom)));
         }
     }
 }

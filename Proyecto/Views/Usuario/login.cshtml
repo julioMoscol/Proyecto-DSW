@@ -1,0 +1,48 @@
+﻿@model Proyecto.Models.Trabajador;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Proyecto.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#"><img alt="" src="~/imagenes/logo.png" style="width:100px;height:80px;"></a>
+        </div>
+    </header>
+    <div class="card">
+        <div class="card-header">
+            Auntenticación
+        </div>
+        <div class="card-body">
+            <form method="post" asp-action="login" asp-controller="Usuario">
+                <div class="mb-3 row">
+                    <label for="floatingInput" class="col-sm-2 col-form-label">Correo</label>
+                    <input type="text" class="form-control" required asp-for="correo" />
+                </div>
+                <div class="mb-3 row">
+                    <label for="floatingInput" class="col-sm-2 col-form-label">Contraseña </label>
+                    <input type="password" class="form-control" required asp-for="password" />
+                </div>
+                <div class=" checkbox mb-3">
+                    <label>
+                        <input type="checkbox" asp-for="manteneractivo" />Recordar sesion
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-dark">Ingresar</button>
+                <label class="alert-danger">@ViewBag.Error</label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

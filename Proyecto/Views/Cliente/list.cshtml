@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Proyecto.Models.Cliente>
 
 @{
-    ViewData["Title"] = "Cliente";
+    ViewData["Title"] = "list";
 }
 
 <h1>Listado de Clientes</h1>
@@ -11,6 +11,9 @@
     @Html.TextBox("nom")
     <button>Consultar</button>
 </form>
+<div>
+    <a asp-action="Create" class="btn btn-primary">Nuevo cliente</a>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -69,9 +72,8 @@
                 @Html.DisplayFor(modelItem => item.password)
             </td>
             <td>
-                @Html.ActionLink("Editar", "EditCliente", new { idcliente = item.idcliente }) |
-                @Html.ActionLink("Detalle", "DetailsCliente", new { idcliente = item.idcliente }) |
-                @Html.ActionLink("Eliminar", "DeleteCliente", new { idcliente = item.idcliente }, new { onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" })
+                @Html.ActionLink("Editar", "Edit", new { idcliente = item.idcliente })
+                @Html.ActionLink("Eliminar", "Delete", new { idcliente = item.idcliente }, new { onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" })
             </td>
         </tr>
 }

@@ -141,5 +141,13 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         {
             throw new NotImplementedException();
         }
+
+        public Trabajador GetUsuario(string correo)
+        {
+            if (string.IsNullOrEmpty(correo))
+                return new Trabajador();
+            else
+                return GetTrabajador().FirstOrDefault(x => x.correo == correo);
+        }
     }
 }

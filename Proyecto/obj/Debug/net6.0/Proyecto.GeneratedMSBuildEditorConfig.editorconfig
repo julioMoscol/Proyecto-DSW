@@ -16,20 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\cibertec V\Desarrollo de servicios web I\Proyecto\Proyecto-DSW\Proyecto
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Cliente.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xDbGllbnRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Producto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xQcm9kdWN0by5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/CallaoPets/Trabajador.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsbGFvUGV0c1xUcmFiYWphZG9yLmNzaHRtbA==
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Cliente/list.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxsaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Home/Index.cshtml]
@@ -40,12 +28,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Producto/list.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cbGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Proveedor/list.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXGxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Trabajador/list.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/Usuario/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/cibertec V/Desarrollo de servicios web I/Proyecto/Proyecto-DSW/Proyecto/Views/_ViewImports.cshtml]

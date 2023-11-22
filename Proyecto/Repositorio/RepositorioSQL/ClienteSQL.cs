@@ -49,7 +49,11 @@ namespace Proyecto.Repositorio.RepositorioSQL
 
         public Cliente buscarCliente(int id)
         {
-            return GetCliente().FirstOrDefault(x => x.idcliente == id);
+
+            if (string.IsNullOrEmpty(id.ToString()))
+                return new Cliente();
+            else
+                return GetCliente().FirstOrDefault(x => x.idcliente == id);
         }
 
         public string eliminarCliente(Cliente id)

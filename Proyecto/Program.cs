@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Proyecto.Repositorio.Interface;
 using Proyecto.Repositorio.RepositorioSQL;
 
@@ -10,6 +11,14 @@ builder.Services.AddSingleton<ICliente, ClienteSQL>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(option =>
+{
+    option.IdleTimeout = TimeSpan.FromMinutes(30);
+});
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(option => {
+    option.LoginPath = "/Usuario/login";
+});
 
 var app = builder.Build();
 
@@ -21,15 +30,19 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=index}/{id?}");
 
 app.Run();

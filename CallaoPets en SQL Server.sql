@@ -31,7 +31,7 @@ CREATE TABLE cliente (
     Direccion VARCHAR(80) NOT NULL,
     Correo VARCHAR(60) NOT NULL,
     DNI VARCHAR(8) NOT NULL,
-    password VARCHAR(20) NULL
+    password VARCHAR(250) NULL
 )
 go
 
@@ -54,7 +54,7 @@ CREATE TABLE trabajador (
     Direccion VARCHAR(60) NOT NULL,
     IdCargo INT NOT NULL,
     IdTipoArea INT NOT NULL,
-    Password VARCHAR(20) NOT NULL,
+    Password VARCHAR(250) NOT NULL,
     FOREIGN KEY (IdTipoArea) REFERENCES area(IdTipoArea),
     FOREIGN KEY (IdCargo) REFERENCES Cargo(IdCargo)
 )
@@ -194,8 +194,6 @@ CREATE TABLE detalle_venta (
 go
 
 
-
-
 /*INSERTS A LAS TABLAS*/
 INSERT INTO animal (IdAnimal, Descripcion) VALUES (1, 'gato'), (2, 'perro')
 go
@@ -217,29 +215,29 @@ VALUES (1, 'gerente'),
 
 INSERT INTO cliente (IdCliente, Nombres, Apellidos, Telefono, Direccion, Correo, DNI, password)
 VALUES
-(1, 'Sabrina', 'Mendoza Paredes', '912561329', 'Av Venezuela', 'sabrinagaray@gmai.com', '09876543', 'gumy1005'),
-(4, 'Ariana', 'Milla Leon', '912561329', 'Jr Napo 123', 'arianamillaleon@gmail.com', '12345678', 'ari123456'),
-(5, 'Sofia', 'Vera', '912561329', 'Tamarugal D34', 'sabrinavera@gmail.com', '09876543', 'gatito1005'),
-(6, 'Valeria Patricia', 'Mendoza Paredes', '956712345', 'Tamarugal D34', 'valeriapatricia@gmail.com', '71234567', 'gatito1005')
+(1, 'Sabrina', 'Mendoza Paredes', '912561329', 'Av Venezuela', 'sabrinamendoza@gmai.com', '09876543', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(4, 'Ariana', 'Milla Leon', '912561329', 'Jr Napo 123', 'arianamillaleon@gmail.com', '12345678', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(5, 'Sofia', 'Vera', '912561329', 'Tamarugal D34', 'sofiavera@gmail.com', '09876543', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(6, 'Valeria Patricia', 'Mendoza Paredes', '956712345', 'Tamarugal D34', 'valeriapatricia@gmail.com', '71234567', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
+go
+
+INSERT INTO trabajador (IdTrabajador, Nombres, Apellidos, DNI, Telefono, Correo, Direccion, IdCargo, IdTipoArea, password)
+VALUES
+(1, 'Gibeth Andrea', 'Peña Alarcon', '74854123', '912561329', 'gibethandrea@gmail.com', 'Tamarugal D34', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(2, 'Alfredo', 'Castillo', '79876543', '998765432', 'alfredocastillo@gmail.com', 'Av Tomas Valle 1120', 3, 2, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(3, 'Sabrina', 'Garay Mendoza', '20984567', '912561329', 'sabrinagaray@gmai.com', 'Islas Aleutianas', 3, 5, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(4, 'Akem', 'Del Rio', '76781234', '912987321', 'akemidelrio@gmail.com', 'Av. Tomás Valle', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(5, 'Milagros', 'Calderón', '77897654', '955677675', 'milagroscalderon@gmail.com', 'Av La Marina 1021', 2, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(6, 'Joshua', 'Perez Martinez', '74854122', '945612389', 'joshuaperez@gmail.com', 'Tamarugal D34', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(7, 'Zadith', 'Vera', '09876543', '956712345', 'zadithvera@gmail.com', 'Av Venezuela', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(9, 'Sabrina', 'Vera', '09876543', '912234897', 'sabrinavera@gmail.com', 'Islas Aleutianas', 1, 3, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+(15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
 go
 
 INSERT INTO empresa_delivery (IdEmpresaDelivery, Nombre, Telefono, RUC)
 VALUES (1, 'Rappi', '01 4254126', '20602985971'),
        (2, 'PedidosYa', '01 4789876', '20556082708')
  go  
-
-INSERT INTO trabajador (IdTrabajador, Nombres, Apellidos, DNI, Telefono, Correo, Direccion, IdCargo, IdTipoArea, password)
-VALUES
-(1, 'Gibeth Andrea', 'Peña Alarcon', '74854123', '912561329', 'gibethandrea@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
-(2, 'Alfredo', 'Castillo', '79876543', '998765432', 'alfredocastillo@gmail.com', 'Av Tomas Valle 1120', 3, 2, 'gatito12'),
-(3, 'Sabrina', 'Garay Mendoza', '20984567', '912561329', 'sabrinagaray@gmai.com', 'Islas Aleutianas', 3, 5, 'gatito1005'),
-(4, 'Akem', 'Del Rio', '76781234', '912987321', 'akemidelrio@gmail.com', 'Av. Tomás Valle', 1, 1, 'gatito1005'),
-(5, 'Milagros', 'Calderón', '77897654', '955677675', 'milagroscalderon@gmail.com', 'Av La Marina 1021', 2, 1, 'gatito1005'),
-(6, 'Joshua', 'Perez Martinez', '74854122', '945612389', 'joshuaperez@gmail.com', 'Tamarugal D34', 1, 1, 'gatito1005'),
-(7, 'Zadith', 'Vera', '09876543', '956712345', 'gigibethandrea@gmail.com', 'Av Venezuela', 1, 1, 'gatito1005'),
-(9, 'Sabrina', 'Vera', '09876543', '912234897', 'milagroscalderon@gmail.com', 'Islas Aleutianas', 1, 3, 'gatito1005'),
-(15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'akemi123')
-go
 
 INSERT INTO proveedor (IdProveedor, Telefono, Direccion, Empresa, RUC, Correo, Representante)
 VALUES (1, '359-1406', 'Av. José Pardo 434', 'Rintisa', '20100617332', 'consultas@ricocan.com', 'José Perez')
@@ -321,7 +319,7 @@ create or alter proc agregar_clientes
     @Direccion varchar(80),
     @Correo varchar(60),
     @DNI varchar(8),
-    @password varchar(20)
+    @password varchar(250)
 as
 begin
     insert into cliente values (@idCliente, @Nombres, @Apellidos, @Telefono, @Direccion, @Correo, @DNI, @password)
@@ -336,7 +334,7 @@ create or alter proc actualizar_clientes
     @Direccion varchar(80),
     @Correo varchar(60),
     @DNI varchar(8),
-    @password varchar(20)
+    @password varchar(250)
 as
 begin
     update cliente set Nombres = @Nombres, Apellidos = @Apellidos, Telefono = @Telefono, Direccion = @Direccion, Correo = @Correo, DNI = @DNI, password = @password
@@ -390,7 +388,7 @@ create or alter proc agregar_trabajador
     @Direccion varchar(60),
     @IdCargo int,
     @IdTipoArea int,
-    @Password varchar(20)
+    @Password varchar(250)
 as
 begin
     insert into trabajador values (@IdTrabajador, @Nombres, @Apellidos,  @DNI, @Telefono, @Correo, @Direccion, @IdCargo, @IdTipoArea, @Password)
@@ -407,7 +405,7 @@ create or alter proc actualizar_trabajador
     @Direccion varchar(60),
     @IdCargo int,
     @IdTipoArea int,
-    @Password varchar(20)
+    @Password varchar(250)
 as
 begin
     update trabajador set Nombres = @Nombres, Apellidos = @Apellidos, DNI = @DNI, Telefono = @Telefono, Correo = @Correo, Direccion = @Direccion, IdCargo = @IdCargo, IdTipoArea = @IdTipoArea, Password = @Password
@@ -500,24 +498,26 @@ go
 
 CREATE or alter PROCEDURE usp_ingresosistemacliente
     @correo varchar(60),
-    @password varchar(20)
+    @clave varchar(250)
 AS
 BEGIN
     SELECT *
     FROM cliente
-    WHERE Correo = @correo AND [password] = @password
+    WHERE Correo = @correo AND [password] = @clave
 END
 go
 
 CREATE or alter PROCEDURE usp_ingresosistematrabajador
     @correo varchar(60),
-    @password varchar(20)
+    @clave varchar(250)
 AS
 BEGIN
     SELECT *
     FROM trabajador
-    WHERE Correo = @correo AND [password] = @password
+    WHERE Correo = @correo AND [password] = @clave
 END
+go
+exec usp_ingresosistematrabajador 'gibethandrea@gmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'
 go
 
 create or alter proc listar_proveedores
@@ -536,6 +536,8 @@ BEGIN
     select * from proveedor
     where Empresa like @empresa + '%'
 end
+
+
 GO
 
 create or alter proc agregar_proveedores

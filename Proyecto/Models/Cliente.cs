@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Proyecto.Models{
     public class Cliente{
@@ -11,6 +12,7 @@ namespace Proyecto.Models{
         [Required, Display(Name = "Email"), DataType(DataType.EmailAddress)] public string correo { get; set; }
         [Required, Display(Name = "DNI"), RegularExpression("^[0-9]{8}$")] public string dni { get; set; }
         [Required, Display(Name = "Contraseña")] public string password { get; set; }
+
         public Cliente()
         {
             idcliente = 0;

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<Proyecto.Models.Trabajador>
 
 @{
-    ViewData["Title"] = "Trabajador";
+    ViewData["Title"] = "list";
 }
 
 <h1>Trabajador</h1>
@@ -80,8 +80,8 @@
             </td>
             <td>
                 @Html.ActionLink("Editar", "Edit", new { id=item.idtrabajador},new {@class="btn btn-primary"}) |
-                    @Html.ActionLink("Detalles", "Details", new { id=item.idtrabajador },new{@class="btn btn-success"}) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id=item.idtrabajador },new {@class="btn btn-danger"})
+                @Html.ActionLink("Detalles", "Details", new { id=item.idtrabajador },new{@class="btn btn-success"}) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.idtrabajador },new {@class="btn btn-danger"})
             </td>
         </tr>
 }

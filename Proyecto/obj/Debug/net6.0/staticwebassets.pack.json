@@ -13,6 +13,110 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\Logo_.png",
+      "PackagePath": "staticwebassets\\imagenes\\Logo_.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmacli.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\backgroundmacli.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmatra.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\backgroundmatra.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundpe.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\backgroundpe.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\baner.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\baner.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner1.png",
+      "PackagePath": "staticwebassets\\imagenes\\banner1.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner2.png",
+      "PackagePath": "staticwebassets\\imagenes\\banner2.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner3.png",
+      "PackagePath": "staticwebassets\\imagenes\\banner3.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\bannercli.png",
+      "PackagePath": "staticwebassets\\imagenes\\bannercli.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida.2.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\comida.2.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida1.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\comida1.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida3.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\comida3.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida4.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\comida4.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida5.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\comida5.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\empresa.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\empresa.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\facebook.png",
+      "PackagePath": "staticwebassets\\imagenes\\facebook.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\gato.png",
+      "PackagePath": "staticwebassets\\imagenes\\gato.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\instagram.png",
+      "PackagePath": "staticwebassets\\imagenes\\instagram.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\linkedin.png",
+      "PackagePath": "staticwebassets\\imagenes\\linkedin.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\logo.png",
+      "PackagePath": "staticwebassets\\imagenes\\logo.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perrito.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\perrito.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perro.png",
+      "PackagePath": "staticwebassets\\imagenes\\perro.png"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_1.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\prod_1.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_2.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\prod_2.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_3.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\prod_3.jpg"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_4.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\prod_4.jpg"
+    },
+    {
       "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

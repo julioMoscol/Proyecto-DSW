@@ -7,5 +7,6 @@ namespace Proyecto.Repositorio.Interface{
         string actualizarTrabajador(Trabajador reg);
         string eliminarTrabajador(Trabajador reg);
         Trabajador GetTrabajador(int idtrabajador);
+        Trabajador GetUsuario(string correo);
     }
 }

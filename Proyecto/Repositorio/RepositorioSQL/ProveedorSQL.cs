@@ -33,7 +33,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return temporal;
         }
-        public IEnumerable<Proveedor> GetProveedor(string empresa)
+        public IEnumerable<Proveedor> filtroProveedor_Nombre(string empresa)
         {
             List<Proveedor> temporal = new List<Proveedor>();
             using(SqlConnection cn = new SqlConnection(cadena)){
@@ -126,9 +126,30 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return mensaje;
         }
-        public Proveedor GetProveedor(int idProveedor)
+        public Proveedor Buscar(int ? id = null)
         {
-            throw new NotImplementedException();
+            if (id == null)
+                return new Proveedor();
+            else
+                return GetProveedor().FirstOrDefault(p => p.idProveedor == id.Value);
+        }
+
+        public int autogenera()
+        {
+            int cod = 0;
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("usp_autogenera_idproveedor", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.Add("@idproveedor", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+                cod = (int)cmd.Parameters["@idproveedor"].Value;
+
+                cn.Close();
+            }
+            return cod;
         }
     }
 }

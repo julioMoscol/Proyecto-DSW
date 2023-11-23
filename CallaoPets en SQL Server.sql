@@ -579,6 +579,18 @@ end
 go
 
 
+/*AutoGenerados*/
+create or alter proc usp_autogenera_idproveedor
+@idproveedor int output
+as
+begin
+	Declare @aux int = (Select top 1 IdProveedor from proveedor order by 1 desc)
+	if(@aux is null)
+		set @idproveedor = 1 
+	else
+		set @idproveedor = @aux + 1 
+end
+go
 
 
 /*PROBANDO PROC Y SELECTS*/

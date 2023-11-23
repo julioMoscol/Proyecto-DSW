@@ -1,0 +1,60 @@
+﻿@model Proyecto.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Detalles del Proveedor";
+}
+
+<h1>Detalles del Proveedor</h1>
+
+<div>
+    <h4>Proveedor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idProveedor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idProveedor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.empresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.empresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ruc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ruc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.representante)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.representante)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Actualizar Datos del Proveedor", "Edit", new { id = Model.idProveedor }, new{@class="btn btn-primary"}) |
+    <a asp-action="list" class="btn btn-info">Back to List</a>
+</div>

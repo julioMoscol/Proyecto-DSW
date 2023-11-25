@@ -3,8 +3,9 @@ using Proyecto.Repositorio.Interface;
 using Microsoft.Data.SqlClient;
 using System.Configuration;
 using System.Data;
-
-namespace Proyecto.Repositorio.RepositorioSQL{
+using Proyecto.Repositorio.Interface;
+namespace Proyecto.Repositorio.RepositorioSQL
+{
     public class ProductoSQl : IProducto
     {
         private readonly string cadena;
@@ -133,7 +134,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             string mensaje = "";
             using(SqlConnection cn = new SqlConnection(cadena)){
                 try{
-                    SqlCommand cmd = new SqlCommand("actualizar_productos", cn);
+                    SqlCommand cmd = new SqlCommand("eliminar_productos", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@IdProducto", reg.idproducto);
                     cn.Open();
@@ -147,9 +148,14 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return mensaje;
         }
-        public Producto GetProducto(int idproducto)
+
+        public Producto GetProductoID(int? id = null)
         {
-            throw new NotImplementedException();
+
+            if (id == null)
+                return null;
+            else
+                return GetProducto().FirstOrDefault(p => p.idproducto == id.Value);
         }
     }
 }

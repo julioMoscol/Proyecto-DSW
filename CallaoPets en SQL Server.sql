@@ -4,6 +4,7 @@ go
 use callaopets
 go
 
+
 /*CREANDO TABLAS*/
 CREATE TABLE animal (
     IdAnimal INT PRIMARY KEY,
@@ -296,6 +297,19 @@ go
 
 
 /*PROCEDURES*/
+
+create or alter proc usp_animal_list
+as
+select *from animal
+go
+create or alter proc usp_tipoproducto_list
+as
+select *from tipoproducto
+go
+ create or alter proc usp_como_proveedor
+ as
+ select IdProveedor,Empresa from proveedor
+ go
 create or alter proc usp_listar_cliente
 as
 begin 
@@ -518,6 +532,9 @@ BEGIN
 END
 go
 exec usp_ingresosistematrabajador 'gibethandrea@gmail.com', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'
+go
+
+exec usp_ingresosistematrabajador 'gibethandrea@gmail.com','gatito1005'
 go
 
 create or alter proc listar_proveedores

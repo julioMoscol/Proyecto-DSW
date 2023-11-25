@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<Proyecto.Models.Producto>
-
+<link href="~/css/estilo.css" rel="stylesheet" />
 @{
     ViewData["Title"] = "list";
 }
@@ -8,89 +8,61 @@
 
 <div>
     <a asp-action="Create" class="btn btn-primary">Nuevo Producto</a>
+    
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.idproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.tipoproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.idproveedor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nomproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cantproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.precproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.stockmin)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.stockmax)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.estadoproducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.animal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.precproveedor)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.idproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.tipoproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.idproveedor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.nomproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cantproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.precproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.stockmin)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.stockmax)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.estadoproducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.animal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.precproveedor)
-            </td>
-            <td>
-                @Html.ActionLink("Editable", "Edit", new { id=item.idproducto },new{@class="btn btn-primary"}) |
-                @Html.ActionLink("Detalles", "Details", new { id=item.idproducto},new {@class="btn btn-success"}) |
-                @Html.ActionLink("Eliminar", "Delete", new { id=item.idproducto },new{@class="btn btn-danger"})
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+    
+    
+
+  <div class="formulario">
+
+            @foreach (var item in Model)
+            {
+
+                <div class="card" style="width: 18rem;">
+                    <img src="@Url.Content($"~/imagenes/prod_{item.idproducto}.jpg")" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <em>Codigo:</em>@Html.DisplayFor(modelItem => item.idproducto)
+                        <br>
+                        <em>Tipo:</em>@Html.DisplayFor(modelItem => item.tipoproducto)
+                        <br>
+                        <em>IdProveedor:</em>@Html.DisplayFor(modelItem => item.idproveedor)
+                        <br>
+                        <em>Nombre:</em>@Html.DisplayFor(modelItem => item.nomproducto)
+                        <br>
+                        <em>Cantidad:</em> @Html.DisplayFor(modelItem => item.cantproducto)
+                        <br>
+
+                        <em>Precio:</em>@Html.DisplayFor(modelItem => item.precproducto)
+                        <br>
+                        <em>Stock Max:</em>  @Html.DisplayFor(modelItem => item.stockmax)
+                        <br>
+                        <em>Stcok Min:</em>@Html.DisplayFor(modelItem => item.stockmin)
+                        <br>
+                        <em>Estado:</em> @Html.DisplayFor(modelItem => item.estadoproducto)
+                        <br>
+                        <em>Animal:</em>@Html.DisplayFor(modelItem => item.animal)
+                        <br>
+                        <em>Precio Proveedor</em>@Html.DisplayFor(modelItem => item.precproveedor)
+                        <br>
+                        <div class="d-grid gap-1">
+                            @Html.ActionLink("Editable", "Edit", new { id=item.idproducto },new{@class="btn btn-primary"}) 
+                            @Html.ActionLink("Detalles", "Detalle", new { id=item.idproducto},new {@class="btn btn-success"})
+                            @Html.ActionLink("Eliminar", "Delete", new { id=item.idproducto },new{@class="btn btn-danger"})
+                        </div>
+                        <h5 class="card-title text-center">Producto</h5>
+
+                    </div>
+                </div>
+
+            }
+
+   </div>
+
+
+
+
+
+
+   

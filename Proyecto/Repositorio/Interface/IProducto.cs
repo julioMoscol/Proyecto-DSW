@@ -8,6 +8,6 @@ namespace Proyecto.Repositorio.Interface{
         string agregarProducto(Producto reg);
         string actualizarProducto(Producto reg);
         string eliminarProducto(Producto reg);
-        Producto GetProducto(int idproducto);
+        Producto GetProductoID(int?id=null);
     }
 }

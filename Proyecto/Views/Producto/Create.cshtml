@@ -1,0 +1,88 @@
+﻿@model Proyecto.Models.Producto
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Producto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="idproducto" class="control-label"></label>
+                <input asp-for="idproducto" class="form-control" />
+                <span asp-validation-for="idproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipoproducto" class="control-label"></label>
+                <select asp-for="tipoproducto" class="form-select" asp-items="@ViewBag.categoria"></select>
+                <span asp-validation-for="tipoproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="idproveedor" class="control-label"></label>
+               
+                <select asp-for="idproveedor" class="form-select" asp-items="@ViewBag.proveedor"></select>
+                <span asp-validation-for="idproveedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nomproducto" class="control-label"></label>
+                <input asp-for="nomproducto" class="form-control" />
+                <span asp-validation-for="nomproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cantproducto" class="control-label"></label>
+                <input asp-for="cantproducto" class="form-control" />
+                <span asp-validation-for="cantproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="precproducto" class="control-label"></label>
+                <input asp-for="precproducto" class="form-control" />
+                <span asp-validation-for="precproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="stockmin" class="control-label"></label>
+                <input asp-for="stockmin" class="form-control" />
+                <span asp-validation-for="stockmin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="stockmax" class="control-label"></label>
+                <input asp-for="stockmax" class="form-control" />
+                <span asp-validation-for="stockmax" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="estadoproducto" class="control-label"></label>
+                <input asp-for="estadoproducto" class="form-control" />
+                <span asp-validation-for="estadoproducto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="animal" class="control-label"></label>
+                <select asp-for="animal" class="form-select" asp-items="@ViewBag.animal"></select>
+                <span asp-validation-for="animal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="precproveedor" class="control-label"></label>
+                <input asp-for="precproveedor" class="form-control" />
+                <span asp-validation-for="precproveedor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Agregar" class="btn btn-primary" />
+                <a asp-action="list" class="btn btn-info">Regresar</a>
+                <a asp-action="" class="btn btn-outline-secondary">Limpiar</a>
+                
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @ViewBag.mensaje
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

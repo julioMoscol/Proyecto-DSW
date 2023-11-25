@@ -1,351 +1,351 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto.bundle.scp.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto.bundle.scp.css",
       "PackagePath": "staticwebassets\\Proyecto.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\site.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\favicon.ico",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\Logo_.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\Logo_.png",
       "PackagePath": "staticwebassets\\imagenes\\Logo_.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmacli.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmacli.jpg",
       "PackagePath": "staticwebassets\\imagenes\\backgroundmacli.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmatra.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundmatra.jpg",
       "PackagePath": "staticwebassets\\imagenes\\backgroundmatra.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundpe.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\backgroundpe.jpg",
       "PackagePath": "staticwebassets\\imagenes\\backgroundpe.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\baner.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\baner.jpg",
       "PackagePath": "staticwebassets\\imagenes\\baner.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner1.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner1.png",
       "PackagePath": "staticwebassets\\imagenes\\banner1.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner2.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner2.png",
       "PackagePath": "staticwebassets\\imagenes\\banner2.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner3.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\banner3.png",
       "PackagePath": "staticwebassets\\imagenes\\banner3.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\bannercli.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\bannercli.png",
       "PackagePath": "staticwebassets\\imagenes\\bannercli.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida.2.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida.2.jpg",
       "PackagePath": "staticwebassets\\imagenes\\comida.2.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida1.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida1.jpg",
       "PackagePath": "staticwebassets\\imagenes\\comida1.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida3.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida3.jpg",
       "PackagePath": "staticwebassets\\imagenes\\comida3.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida4.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida4.jpg",
       "PackagePath": "staticwebassets\\imagenes\\comida4.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida5.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\comida5.jpg",
       "PackagePath": "staticwebassets\\imagenes\\comida5.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\empresa.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\empresa.jpg",
       "PackagePath": "staticwebassets\\imagenes\\empresa.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\facebook.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\facebook.png",
       "PackagePath": "staticwebassets\\imagenes\\facebook.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\gato.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\gato.png",
       "PackagePath": "staticwebassets\\imagenes\\gato.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\instagram.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\instagram.png",
       "PackagePath": "staticwebassets\\imagenes\\instagram.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\linkedin.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\linkedin.png",
       "PackagePath": "staticwebassets\\imagenes\\linkedin.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\logo.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\logo.png",
       "PackagePath": "staticwebassets\\imagenes\\logo.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perrito.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perrito.jpg",
       "PackagePath": "staticwebassets\\imagenes\\perrito.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perro.png",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\perro.png",
       "PackagePath": "staticwebassets\\imagenes\\perro.png"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_1.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_1.jpg",
       "PackagePath": "staticwebassets\\imagenes\\prod_1.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_2.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_2.jpg",
       "PackagePath": "staticwebassets\\imagenes\\prod_2.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_3.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_3.jpg",
       "PackagePath": "staticwebassets\\imagenes\\prod_3.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_4.jpg",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\imagenes\\prod_4.jpg",
       "PackagePath": "staticwebassets\\imagenes\\prod_4.jpg"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\js\\site.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

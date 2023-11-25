@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Proyecto.Repositorio.Interface;
 using Proyecto.Repositorio.RepositorioSQL;
 
 namespace Proyecto.Controllers
 {
+    [Authorize]
     public class ClienteController : Controller
     {
         IProducto _producto;

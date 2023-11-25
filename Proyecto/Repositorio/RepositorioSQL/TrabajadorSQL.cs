@@ -22,13 +22,14 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                     temporal.Add(new Trabajador(){
                         idtrabajador = dr.GetInt32(0),
                         nomtrabajador = dr.GetString(1),
-                        dnitrabajador = dr.GetString(2),
-                        teltrabajador = dr.GetString(3),
-                        correo = dr.GetString(4),
-                        direccion = dr.GetString(5),
-                        cargo = dr.GetString(6),
-                        area = dr.GetString(7),
-                        password = dr.GetString(8),
+                        apetrabajador = dr.GetString(2),
+                        dnitrabajador = dr.GetString(3),
+                        teltrabajador = dr.GetString(4),
+                        correo = dr.GetString(5),
+                        direccion = dr.GetString(6),
+                        cargo = dr.GetInt32(7),
+                        area = dr.GetInt32(8),
+                        password = dr.GetString(9),
                     });
                 }
                 dr.Close();
@@ -53,8 +54,8 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                         teltrabajador = dr.GetString(3),
                         correo = dr.GetString(4),
                         direccion = dr.GetString(5),
-                        cargo = dr.GetString(6),
-                        area = dr.GetString(7),
+                        cargo = dr.GetInt32(6),
+                        area = dr.GetInt32(7),
                         password = dr.GetString(8),
                     });
                 }
@@ -139,7 +140,10 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         }
         public Trabajador GetTrabajador(int idtrabajador)
         {
-            throw new NotImplementedException();
+            if (string.IsNullOrEmpty(idtrabajador.ToString()))
+                return new Trabajador();
+            else
+                return GetTrabajador().FirstOrDefault(x => x.idtrabajador == idtrabajador);
         }
 
         public Trabajador GetUsuario(string correo)
@@ -148,6 +152,24 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                 return new Trabajador();
             else
                 return GetTrabajador().FirstOrDefault(x => x.correo == correo);
+        }
+
+        public int autogenera()
+        {
+            int cod = 0;
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("usp_autogenera_idtrabajador", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.Add("@idtrabajador", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+                cod = (int)cmd.Parameters["@idtrabajador"].Value;
+
+                cn.Close();
+            }
+            return cod;
         }
     }
 }

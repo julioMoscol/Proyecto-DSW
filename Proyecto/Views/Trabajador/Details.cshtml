@@ -1,0 +1,78 @@
+﻿@model Proyecto.Models.Trabajador
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Trabajador</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idtrabajador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idtrabajador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomtrabajador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomtrabajador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.apetrabajador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.apetrabajador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.dnitrabajador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.dnitrabajador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.teltrabajador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.teltrabajador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cargo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cargo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.area)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.area)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.password)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Actualizar", "Edit", new { id = Model.idtrabajador }, new{@class="btn btn-primary"}) |
+    <a asp-action="list" class="btn btn-info">Back to List</a>
+</div>

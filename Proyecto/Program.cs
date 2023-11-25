@@ -8,6 +8,8 @@ builder.Services.AddSingleton<IProducto, ProductoSQl>();
 builder.Services.AddSingleton<IProveedor, ProveedorSQL>();
 builder.Services.AddSingleton<ITrabajador, TrabajadorSQL>();
 builder.Services.AddSingleton<ICliente, ClienteSQL>();
+builder.Services.AddSingleton<IArea, AreaSQL>();
+builder.Services.AddSingleton<ICargo,CargoSQL>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

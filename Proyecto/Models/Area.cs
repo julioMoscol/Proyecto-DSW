@@ -1,8 +1,8 @@
 ﻿namespace Proyecto.Models
 {
-    public class Rol
+    public class Area
     {
-        public int idrol { get; set; }
+        public int idarea { get; set; }
         public string descripcion { get; set; }
     }
 }

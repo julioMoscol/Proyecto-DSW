@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\Proyecto.bundle.scp.css"
     },
     {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\css\\font\\bootstrap-icons.json"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\css\\font\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\css\\font\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\css\\font\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\font\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\css\\font\\fonts\\bootstrap-icons.woff2"
+    },
+    {
       "Id": "D:\\cibertec V\\Desarrollo de servicios web I\\Proyecto\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

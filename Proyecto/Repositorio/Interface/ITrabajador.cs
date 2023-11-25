@@ -8,5 +8,6 @@ namespace Proyecto.Repositorio.Interface{
         string eliminarTrabajador(Trabajador reg);
         Trabajador GetTrabajador(int idtrabajador);
         Trabajador GetUsuario(string correo);
+        int autogenera();
     }
 }

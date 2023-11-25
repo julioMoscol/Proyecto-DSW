@@ -369,12 +369,8 @@ go
 CREATE or alter PROCEDURE listar_trabajador
 AS
 BEGIN
-    SELECT t.IdTrabajador, CONCAT(t.Nombres, ' ', t.Apellidos) AS Nombres, t.DNI, t.Telefono,
-           t.Correo, t.Direccion, c.Descripcion AS Cargo, a.Descripcion AS Area, t.Password
-    FROM trabajador t
-    INNER JOIN cargo c ON c.IdCargo = t.IdCargo
-    INNER JOIN area a ON a.IdTipoArea = t.IdTipoArea
-    ORDER BY 1
+    SELECT *
+    FROM trabajador
 END
 go
  
@@ -606,6 +602,18 @@ begin
 end
 go
 
+
+create or alter proc usp_autogenera_idtrabajador
+@idtrabajador int output
+as
+begin
+	Declare @aux int = (Select top 1 IdTrabajador from trabajador order by 1 desc)
+	if(@aux is null)
+		set @idtrabajador = 1 
+	else
+		set @idtrabajador = @aux + 1 
+end
+go
 
 /*PROBANDO PROC Y SELECTS*/
 select*from animal

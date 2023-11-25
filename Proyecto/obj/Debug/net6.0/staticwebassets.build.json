@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xwY1K9qEaPR3ywwFUoN14ev8S9gDoalwOnhUJ2lisq8=",
+  "Hash": "HhmREZONFl+Chb12lHkZJHikhohf6iw/I4NPQUB1i8Q=",
   "Source": "Proyecto",
   "BasePath": "_content/Proyecto",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\net\\Proyecto-DSW\\Proyecto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\net\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\estilo.css",
+      "SourceId": "Proyecto",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\net\\Proyecto-DSW\\Proyecto\\wwwroot\\",
+      "BasePath": "_content/Proyecto",
+      "RelativePath": "css/estilo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\estilo.css"
     },
     {
       "Identity": "D:\\net\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\site.css",

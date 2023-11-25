@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Proyecto.bundle.scp.css"
     },
     {
+      "Id": "D:\\net\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\estilo.css",
+      "PackagePath": "staticwebassets\\css\\estilo.css"
+    },
+    {
       "Id": "D:\\net\\Proyecto-DSW\\Proyecto\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

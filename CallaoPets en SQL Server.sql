@@ -296,6 +296,20 @@ go
 
 
 /*PROCEDURES*/
+create or alter proc usp_animal_list
+as
+select *from animal
+go
+create or alter proc usp_tipoproducto_list
+as
+select *from tipoproducto
+go
+ create or alter proc usp_como_proveedor
+ as
+ select IdProveedor,Empresa from proveedor
+ go
+
+
 create or alter proc usp_listar_cliente
 as
 begin 

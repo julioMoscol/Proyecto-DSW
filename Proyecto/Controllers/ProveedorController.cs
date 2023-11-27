@@ -64,5 +64,20 @@ namespace Proyecto.Controllers
             else
                 return View(await Task.Run(() => _proveedor.Buscar(id)));
         }
+
+        public async Task<IActionResult> Delete(int? id = null)
+        {
+            if (id == null)
+                return RedirectToAction("list");
+
+            return View(await Task.Run(() => _proveedor.Buscar(id.Value)));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(Proveedor reg, int ? id = null)
+        {
+            ViewBag.mensaje = _proveedor.eliminarProveedor(_proveedor.Buscar(id.Value));
+            return View(await Task.Run(() => reg));
+        }
     }
 }

@@ -231,7 +231,7 @@ VALUES
 (6, 'Joshua', 'Perez Martinez', '74854122', '945612389', 'joshuaperez@gmail.com', 'Tamarugal D34', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
 (7, 'Zadith', 'Vera', '09876543', '956712345', 'zadithvera@gmail.com', 'Av Venezuela', 1, 1, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
 (9, 'Sabrina', 'Vera', '09876543', '912234897', 'sabrinavera@gmail.com', 'Islas Aleutianas', 1, 3, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
-(15, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
+(10, 'Akemi', 'Alarcon Gutierrez', '79876543', '912345678', 'akemialarcon@gmail.com', 'Tamarugal D34', 3, 4, 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3')
 go
 
 INSERT INTO empresa_delivery (IdEmpresaDelivery, Nombre, Telefono, RUC)

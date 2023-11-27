@@ -1,10 +1,10 @@
 ﻿@model Proyecto.Models.Proveedor
 
 @{
-    ViewData["Title"] = "Detalles del Proveedor";
+    ViewData["Title"] = "Eliminar Proveedor";
 }
 
-<h1>Detalles del Proveedor</h1>
+<h1>Eliminar Proveedor</h1>
 
 <div>
     <h4>Proveedor</h4>
@@ -53,8 +53,12 @@
             @Html.DisplayFor(model => model.representante)
         </dd>
     </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar Proveedor" class="btn btn-danger" /> |
+        <a asp-action="list" class="btn btn-success">Ir al Listado</a>
+    </form>
 </div>
 <div>
-    @Html.ActionLink("Actualizar Datos", "Edit", new { id = Model.idProveedor }, new{@class="btn btn-primary"}) |
-    <a asp-action="list" class="btn btn-success">Ir al listado</a>
+    @ViewBag.mensaje
 </div>

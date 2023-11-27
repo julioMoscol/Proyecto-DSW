@@ -7,7 +7,7 @@
 <h1>Lista de Proveedores</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Añadir Nuevo Proveedor</a>
+    <a asp-action="Create" class="btn btn-primary bi bi-person plus"> Añadir Nuevo Proveedor</a>
 </p>
 <table class="table">
     <thead>
@@ -61,9 +61,9 @@
                 @Html.DisplayFor(modelItem => item.representante)
             </td>
             <td>
-                    @Html.ActionLink("Actualizar", "Edit", new { id=item.idProveedor }, new{@class="btn btn-warning"}) |
-                    @Html.ActionLink("Detalles", "Details", new { id=item.idProveedor }, new{@class="btn btn-info"}) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id=item.idProveedor }, new{@class="btn btn-danger"})
+                    @Html.ActionLink(" Actualizar", "Edit", new { id=item.idProveedor }, new{@class="btn btn-warning bi bi-pencil-square"}) |
+                    @Html.ActionLink(" Detalles", "Details", new { id=item.idProveedor }, new{@class="btn btn-success bi bi-ticket-detailed"}) |
+                    @Html.ActionLink(" Eliminar", "Delete", new { id=item.idProveedor }, new{@class="btn btn-danger bi bi-trash"})
             </td>
         </tr>
 }

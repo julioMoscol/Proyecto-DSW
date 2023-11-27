@@ -80,7 +80,7 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                     cn.Close();
                 }
             }
-            return mensaje;
+            return mensaje;   
         }
         public string actualizarProveedor(Proveedor reg)
         {

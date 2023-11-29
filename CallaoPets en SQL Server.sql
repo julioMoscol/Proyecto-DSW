@@ -615,6 +615,18 @@ begin
 end
 go
 
+create or alter proc usp_autogenera_idcliente
+@idcliente int output
+as
+begin
+	Declare @aux int = (Select top 1 Idcliente from cliente order by 1 desc)
+	if(@aux is null)
+		set @idcliente = 1 
+	else
+		set @idcliente = @aux + 1 
+end
+go
+
 /*PROBANDO PROC Y SELECTS*/
 select*from animal
 select*from area

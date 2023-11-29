@@ -10380,19 +10380,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexa\\.nuget\\packages\\": {}
+    "C:\\Users\\Guio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
+      "projectUniqueName": "C:\\DSW1\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
       "projectName": "Proyecto",
-      "projectPath": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
-      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexa\\OneDrive\\CIBERTEC\\C#\\Ciclo 5\\Proyecto-DSW\\Proyecto\\obj\\",
+      "projectPath": "C:\\DSW1\\Proyecto-DSW\\Proyecto\\Proyecto.csproj",
+      "packagesPath": "C:\\Users\\Guio\\.nuget\\packages\\",
+      "outputPath": "C:\\DSW1\\Proyecto-DSW\\Proyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Guio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10400,6 +10400,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10450,7 +10451,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -47,6 +47,25 @@ namespace Proyecto.Repositorio.RepositorioSQL
             return mensaje;
         }
 
+        public int autogenera()
+        {
+
+            int cod = 0;
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("usp_autogenera_idcliente", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.Add("@idcliente", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+                cod = (int)cmd.Parameters["@idcliente"].Value;
+
+                cn.Close();
+            }
+            return cod;
+        }
+
         public Cliente buscarCliente(int id)
         {
 

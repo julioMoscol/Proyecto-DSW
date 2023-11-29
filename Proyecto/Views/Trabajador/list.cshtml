@@ -71,11 +71,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.area)
             </td>
-            <td>
+                 <td>
                     @Html.ActionLink("", "Edit", new { id=item.idtrabajador},new {@class="btn btn-warning bi bi-pencil-square"})
                     @Html.ActionLink("", "Details", new { id=item.idtrabajador },new{@class="btn btn-success bi bi-ticket-detailed"})
                     @Html.ActionLink("", "Delete", new { id=item.idtrabajador },new {onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" ,@class="btn btn-danger bi bi-trash" })
-            </td>
+                 </td>
         </tr>
 }
     </tbody>

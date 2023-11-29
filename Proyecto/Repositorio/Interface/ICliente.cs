@@ -10,6 +10,7 @@ namespace Proyecto.Repositorio.Interface
         string agregarCliente(Cliente reg);
         string eliminarCliente(Cliente id);
         string modificarCliente(Cliente reg);
+        int autogenera();
     }
 
 }

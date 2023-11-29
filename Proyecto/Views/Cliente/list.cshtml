@@ -11,9 +11,11 @@
     @Html.TextBox("nom")
     <button>Consultar</button>
 </form>
+<br />
 <div>
-    <a asp-action="Create" class="btn btn-primary">Nuevo cliente</a>
+    <a asp-action="Create" class="btn btn-primary">NUEVO <i class="bi bi-person-plus"></i></a>
 </div>
+<br />
 <table class="table">
     <thead>
         <tr>
@@ -38,9 +40,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.dni)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.password)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -68,13 +68,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.dni)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.password)
-            </td>
-            <td>
-                @Html.ActionLink("Editar", "Edit", new { idcliente = item.idcliente })
-                @Html.ActionLink("Eliminar", "Delete", new { idcliente = item.idcliente }, new { onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" })
-            </td>
+       
+                <td>
+                    @Html.ActionLink("", "Edit", new { id=item.idcliente},new {@class="btn btn-warning bi bi-pencil-square"})
+                    @Html.ActionLink("", "Details", new { id=item.idcliente},new{@class="btn btn-success bi bi-ticket-detailed"})
+                    @Html.ActionLink("", "Delete", new { id=item.idcliente},new {onclick = "return confirm('¿Está seguro que desea eliminar este registro?')" ,@class="btn btn-danger bi bi-trash" })
+                </td>
         </tr>
 }
     </tbody>

@@ -48,9 +48,9 @@ namespace Proyecto.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> Delete(Producto reg)
+        public async Task<IActionResult> Delete(Producto reg,int id)
         {
-
+            reg.idproducto = id;
             ViewBag.mensaje = _producto.eliminarProducto(reg);
             return View(await Task.Run(() => reg));
 
@@ -91,11 +91,14 @@ namespace Proyecto.Controllers
                 return View(await Task.Run(() => _producto.agregarProducto(reg)));
             else
             {
-
+                reg.idproducto = _producto.autogenera();
                 ViewBag.mensaje = _producto.agregarProducto(reg);
                 return View(await Task.Run(() => reg));
             }
+
         }
+
+       
 
     }
 }

@@ -10,5 +10,6 @@ namespace Proyecto.Repositorio.Interface{
         string eliminarProducto(Producto reg);
        
         Producto GetProductoID(int? id = null);
+        int autogenera();
     }
 }

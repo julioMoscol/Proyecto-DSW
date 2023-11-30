@@ -627,6 +627,18 @@ begin
 end
 go
 
+create or alter proc usp_autogenera_idproducto
+@idprod int output
+as
+begin
+	Declare @aux int = (Select top 1 IdProducto from producto order by 1 desc)
+	if(@aux is null)
+		set @idprod = 1 
+	else
+		set @idprod = @aux + 1 
+end
+go
+
 /*PROBANDO PROC Y SELECTS*/
 select*from animal
 select*from area

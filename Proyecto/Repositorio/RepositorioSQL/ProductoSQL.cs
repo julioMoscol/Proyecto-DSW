@@ -157,5 +157,23 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             else
                 return GetProducto().FirstOrDefault(p => p.idproducto == id.Value);
         }
+
+        public int autogenera()
+        {
+            int cod = 0;
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("usp_autogenera_idproducto", cn);
+                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                cmd.Parameters.Add("@idprod", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cmd.ExecuteNonQuery();
+                cod = (int)cmd.Parameters["@idprod"].Value;
+
+                cn.Close();
+            }
+            return cod;
+        }
     }
 }

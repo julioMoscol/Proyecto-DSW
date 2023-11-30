@@ -16,10 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\net\Proyecto-DSW\Proyecto
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/net/Proyecto-DSW/Proyecto/Views/Canasta/Carrito.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuYXN0YVxDYXJyaXRvLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/net/Proyecto-DSW/Proyecto/Views/Cliente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/net/Proyecto-DSW/Proyecto/Views/Proveedor/list.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXGxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/net/Proyecto-DSW/Proyecto/Views/Proveedor/list_proveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXGxpc3RfcHJvdmVlZG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/net/Proyecto-DSW/Proyecto/Views/Shared/Error.cshtml]

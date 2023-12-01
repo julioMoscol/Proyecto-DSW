@@ -1,0 +1,114 @@
+﻿@model IEnumerable<Proyecto.Models.Producto>
+
+@{
+    ViewData["Title"] = "list";
+}
+
+<h1>Seleccione un producto</h1>
+<form>
+    <em>Nombre a filtrar</em>
+    @Html.TextBox("nombre")
+    <button class="btn btn-secondary">Consultar</button>
+</form>
+<br />
+<a asp-action="Canasta" class="btn btn-info">Ir a la Canasta</a>
+<a asp-action="Baja" class="btn btn-info">Ir a Comprar</a>
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tipoproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idproveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stockmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stockmax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estadoproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.animal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precproveedor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipoproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stockmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stockmax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estadoproducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.animal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precproveedor)
+            </td>
+            <td>
+                    @Html.ActionLink("Ver detalle", "Detalle", new { id=item.idproducto }, new {@class="btn btn-outline-dark"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    @for (int i = 0; i < (int)ViewBag.pags; i++)
+    {
+        if ((int)ViewBag.p == i)
+        {
+            @Html.ActionLink((i+1).ToString(),"list",
+    new{p=i, nomproducto=ViewBag.nomproducto},new{@class="btn btn-info"})
+        }
+        else
+        {
+            @Html.ActionLink((i+1).ToString(),"list",
+    new{p=i, nomproducto=ViewBag.nomproducto},new{@class="btn btn-dark"})
+        }
+    }
+</div>
+

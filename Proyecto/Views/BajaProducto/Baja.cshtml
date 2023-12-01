@@ -1,0 +1,43 @@
+﻿@model Proyecto.Models.BajaProducto
+
+@{
+    ViewData["Title"] = "Baja";
+}
+
+<h1>Baja</h1>
+
+<h4>BajaProducto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Baja">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="codbajapro" class="control-label"></label>
+                @Html.TextBox("idbaja",null,new{@class="form-control"})
+            </div>
+            <div class="form-group">
+                <label asp-for="idtrabajador" class="control-label"></label>
+                <input asp-for="idtrabajador" class="form-control" value="@ViewBag.idtrabajador" readonly/>
+                <span asp-validation-for="idtrabajador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechabaja" class="control-label"></label>
+                <input asp-for="fechabaja" class="form-control" />
+                <span asp-validation-for="fechabaja" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registrar baja" class="btn btn-primary" />
+                <a asp-action="Canasta" class="btn btn-success">regresar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @ViewBag.mensaje
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

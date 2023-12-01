@@ -1,0 +1,58 @@
+﻿@model Proyecto.Models.Producto
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<h1>Detalle</h1>
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.idproducto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.idproducto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tipoproducto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tipoproducto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomproducto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomproducto)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cantproducto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cantproducto)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.estadoproducto)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.estadoproducto)
+        </dd>
+    </dl>
+</div>
+<div>
+    <form asp-action="Detalle" method="post">
+        @Html.Hidden("codigo",Model.idproducto)
+        <em>Ingrese la cantidad</em>
+        @Html.TextBox("cantidad",1,new{type="number",min=1,max=Model.cantproducto})
+        <em>Seleccione la baja</em>
+        @Html.TextBox("idtipobaja",1)
+        <br />
+        <br />
+        <input type="submit" value="Agregar" class="btn btn-info" onclick="" />
+        @Html.ActionLink("Regresar al listado", "list", new{@class="btn btn-dark"})
+    </form>
+</div>
+<div>@ViewBag.mensaje</div>

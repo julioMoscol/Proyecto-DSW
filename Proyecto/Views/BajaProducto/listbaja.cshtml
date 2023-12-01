@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Proyecto.Models.BajaProducto>
+
+@{
+    ViewData["Title"] = "listbaja";
+}
+
+<h1>Listado de baja</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.codbajapro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idtrabajador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechabaja)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codbajapro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idtrabajador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechabaja)
+            </td>
+            <td>
+                    @Html.ActionLink("Seleccionar baja", "listdetallebaja", new { id=item.codbajapro }, new {@class="btn btn-outline-dark"})
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -5,6 +5,7 @@ namespace Proyecto.Repositorio.Interface{
 
         IEnumerable<Producto> GetProducto();
         IEnumerable<Producto> GetProducto(string nomproducto);
+        IEnumerable<Producto> GetProductoo(string nomproducto);
         string agregarProducto(Producto reg);
         string actualizarProducto(Producto reg);
         string eliminarProducto(Producto reg);

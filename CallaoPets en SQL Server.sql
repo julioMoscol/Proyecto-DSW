@@ -650,6 +650,25 @@ begin
 end
 go
 
+--baja
+create or alter procedure sp_agregar_baja
+@id int,
+@fecha datetime,
+@idtrabajador int
+as
+insert into baja_producto values(@id,@idtrabajador,@fecha)
+go
+
+
+create or alter procedure sp_detalle_baja
+@id int,
+@idproducto int,
+@cant int,
+@idtipobaja int
+as
+insert into detalle_baja values(@idproducto,@id,@cant,@idtipobaja)
+go
+
 /*PROBANDO PROC Y SELECTS*/
 select*from animal
 select*from area

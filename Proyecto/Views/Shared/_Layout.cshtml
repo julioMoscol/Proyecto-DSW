@@ -39,23 +39,11 @@
                                 Reporte
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-controller="Proveedor" asp-action="list"></a></li>
+                                <li><a class="dropdown-item" asp-controller="Comprar" asp-action="listboleta">Compra</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" asp-controller="Baja" asp-action="list">Baja</a></li>
+                                <li><a class="dropdown-item" asp-controller="BajaProducto" asp-action="listbaja">Baja</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Carrito
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-controller="Canasta" asp-action="Carrito">Compra</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                
-                            </ul>
-                        </li>
-
-
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Transacciones
@@ -63,9 +51,9 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" asp-controller="Comprar" asp-action="listproveedor">Compra</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" asp-controller="Baja" asp-action="list">Baja</a></li>
+                                <li><a class="dropdown-item" asp-controller="BajaProducto" asp-action="list">Baja</a></li>
                             </ul>
-                        </li>             
+                        </li>
                     </ul>
                 </div>
                 <a class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="Salir">Cerrar sesion</a>

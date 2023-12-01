@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Proyecto.Models.DetalleBaja>
+
+@{
+    ViewData["Title"] = "Canasta";
+}
+
+<h1>Canasta</h1>
+<p>
+    @Html.ActionLink("Regresar al listado", "list", new {@class="btn btn-info"})
+    <a asp-action="Baja" class="btn btn-dark">Registrar baja</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idtipobaja)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.idproducto)
+            </td>
+                <form asp-action="Canasta" method="post">
+                    @Html.Hidden("codigo",item.idproducto)
+                <td>
+                        @Html.TextBox("cantidad", item.cantidad,new{type="number"})
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.idtipobaja)
+                </td>
+                <td>
+                    <input type="submit" class="btn btn-outline-secondary" value="Actualizar"> |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.idproducto },new{@class="btn btn-outline-secondary"})
+                </td>
+                </form>
+        </tr>
+}
+    </tbody>
+</table>

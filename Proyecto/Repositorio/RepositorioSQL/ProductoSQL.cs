@@ -68,6 +68,8 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             return temporal;
         }
 
+
+
         public string agregarProducto(Producto reg)
         {
             string mensaje = "";
@@ -179,6 +181,11 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         public IEnumerable<Producto> GetProveedor(int idproveedor)
         {
             return GetProducto().Where(x => x.idproveedor == idproveedor);
+        }
+
+        public IEnumerable<Producto> GetProductoo(string nomproducto)
+        {
+            return GetProducto().Where(x => x.nomproducto.StartsWith(nomproducto, StringComparison.CurrentCultureIgnoreCase));
         }
     }
 }

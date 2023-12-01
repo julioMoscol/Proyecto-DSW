@@ -175,5 +175,10 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return cod;
         }
+
+        public IEnumerable<Producto> GetProveedor(int idproveedor)
+        {
+            return GetProducto().Where(x => x.idproveedor == idproveedor);
+        }
     }
 }

@@ -79,10 +79,6 @@ namespace Proyecto.Controllers
             ViewBag.mensaje = _proveedor.eliminarProveedor(_proveedor.Buscar(id.Value));
             return View(await Task.Run(() => reg));
         }
-        public async Task<IActionResult> list_proveedor()
-        {
-            return View(await Task.Run(() => _proveedor.GetProveedor()));
-        }
 
 
     }

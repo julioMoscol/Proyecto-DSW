@@ -11,5 +11,7 @@ namespace Proyecto.Repositorio.Interface{
        
         Producto GetProductoID(int? id = null);
         int autogenera();
+
+        IEnumerable<Producto> GetProveedor(int idproveedor);
     }
 }

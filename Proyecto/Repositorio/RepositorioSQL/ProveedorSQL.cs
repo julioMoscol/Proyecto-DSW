@@ -8,18 +8,23 @@ namespace Proyecto.Repositorio.RepositorioSQL{
     public class ProveedorSQL : IProveedor
     {
         private readonly string cadena;
-        public ProveedorSQL(){
-            
+        public ProveedorSQL()
+        {
+
             cadena = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("sql");
         }
-        public IEnumerable<Proveedor> GetProveedor(){
+        public IEnumerable<Proveedor> GetProveedor()
+        {
             List<Proveedor> temporal = new List<Proveedor>();
-            using(SqlConnection cn = new SqlConnection(cadena)){
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
                 cn.Open();
                 SqlCommand cmd = new SqlCommand("exec listar_proveedores", cn);
                 SqlDataReader dr = cmd.ExecuteReader();
-                while(dr.Read()){
-                    temporal.Add(new Proveedor(){
+                while (dr.Read())
+                {
+                    temporal.Add(new Proveedor()
+                    {
                         idProveedor = dr.GetInt32(0),
                         telefono = dr.GetString(1),
                         direccion = dr.GetString(2),
@@ -36,14 +41,17 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         public IEnumerable<Proveedor> filtroProveedor_Nombre(string empresa)
         {
             List<Proveedor> temporal = new List<Proveedor>();
-            using(SqlConnection cn = new SqlConnection(cadena)){
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
                 cn.Open();
                 SqlCommand cmd = new SqlCommand("exec listar_proveedores_empresa", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@empresa", empresa);
                 SqlDataReader dr = cmd.ExecuteReader();
-                while(dr.Read()){
-                    temporal.Add(new Proveedor(){
+                while (dr.Read())
+                {
+                    temporal.Add(new Proveedor()
+                    {
                         idProveedor = dr.GetInt32(0),
                         telefono = dr.GetString(1),
                         direccion = dr.GetString(2),
@@ -60,8 +68,10 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         public string agregarProveedor(Proveedor reg)
         {
             string mensaje = "";
-            using(SqlConnection cn = new SqlConnection(cadena)){
-                try{
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                try
+                {
                     SqlCommand cmd = new SqlCommand("agregar_proveedores", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@idProveedor", reg.idProveedor);
@@ -74,19 +84,25 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                     cn.Open();
                     int i = cmd.ExecuteNonQuery();
                     mensaje = $"Se ha agregado {i} proveedor";
-                } catch(Exception ex){
+                }
+                catch (Exception ex)
+                {
                     mensaje = ex.Message;
-                } finally {
+                }
+                finally
+                {
                     cn.Close();
                 }
             }
-            return mensaje;   
+            return mensaje;
         }
         public string actualizarProveedor(Proveedor reg)
         {
             string mensaje = "";
-            using(SqlConnection cn = new SqlConnection(cadena)){
-                try{
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                try
+                {
                     SqlCommand cmd = new SqlCommand("actualizar_proveedores", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@idProveedor", reg.idProveedor);
@@ -99,9 +115,13 @@ namespace Proyecto.Repositorio.RepositorioSQL{
                     cn.Open();
                     int i = cmd.ExecuteNonQuery();
                     mensaje = $"Se ha actualizado {i} proveedor";
-                } catch(Exception ex){
+                }
+                catch (Exception ex)
+                {
                     mensaje = ex.Message;
-                } finally {
+                }
+                finally
+                {
                     cn.Close();
                 }
             }
@@ -110,23 +130,29 @@ namespace Proyecto.Repositorio.RepositorioSQL{
         public string eliminarProveedor(Proveedor reg)
         {
             string mensaje = "";
-            using(SqlConnection cn = new SqlConnection(cadena)){
-                try{
+            using (SqlConnection cn = new SqlConnection(cadena))
+            {
+                try
+                {
                     SqlCommand cmd = new SqlCommand("eliminar_proveedores", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@idProveedor", reg.idProveedor);
                     cn.Open();
                     int i = cmd.ExecuteNonQuery();
                     mensaje = $"Se ha eliminado {i} proveedor";
-                } catch(Exception ex){
+                }
+                catch (Exception ex)
+                {
                     mensaje = ex.Message;
-                } finally {
+                }
+                finally
+                {
                     cn.Close();
                 }
             }
             return mensaje;
         }
-        public Proveedor Buscar(int ? id = null)
+        public Proveedor Buscar(int? id = null)
         {
             if (id == null)
                 return new Proveedor();
@@ -151,5 +177,6 @@ namespace Proyecto.Repositorio.RepositorioSQL{
             }
             return cod;
         }
+
     }
 }

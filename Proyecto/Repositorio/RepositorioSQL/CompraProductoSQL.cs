@@ -14,9 +14,9 @@ namespace Proyecto.Repositorio.RepositorioSQL
                 Build().GetConnectionString("sql");
         }
 
-        public IEnumerable<DetalleCompra> GetBoleta(int? id = null)
+        public IEnumerable<DetalleCompra> GetBoleta(string id )
         {
-            throw new NotImplementedException();
+            return listadoDetalle().Where(x => x.codingresopro.StartsWith(id, StringComparison.CurrentCultureIgnoreCase));
         }
 
         public IEnumerable<CompraProducto> listado()
@@ -31,7 +31,7 @@ namespace Proyecto.Repositorio.RepositorioSQL
                 {
                     temporal.Add(new CompraProducto()
                     {
-                        codingresopro = dr.GetInt32(0),
+                        codingresopro = dr.GetString(0),
                         fecha = dr.GetDateTime(1),
                         idproveedor= dr.GetInt32(2),
                         MontoTotal=dr.GetDecimal(3),
@@ -57,7 +57,7 @@ namespace Proyecto.Repositorio.RepositorioSQL
                 {
                     temporal.Add(new DetalleCompra()
                     {
-                        codingresopro = dr.GetInt32(0),
+                        codingresopro = dr.GetString(0),
                         idproducto = dr.GetInt32(1),
                         preciocompra = dr.GetInt32(2),
                         cantidad = dr.GetInt16(3),
